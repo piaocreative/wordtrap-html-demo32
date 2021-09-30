@@ -1,0 +1,43 @@
+
+.main-section {
+  position: relative;
+  background-image: url(../images/_404.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+	height: 31vh;
+	background-color: #eebfbe;
+
+	@include media-breakpoint-up(xl) {
+		height: 50.7rem;
+	}
+}
+
+.error-404 {
+  position: absolute;
+  top: 63%;
+  transform: translateX(-68%);
+  left: 37%;
+  transform: translateY(-36%);
+
+	@include media-breakpoint-down(lg) {
+		top: 79%;
+		transform: translateX(-68%);
+		left: 29%;
+		transform: translateY(-50%);
+	}
+
+	p {
+		color: #2f363a;
+		font-size: 1.25rem;
+		font-family: 'Segoe UI';
+		font-weight: 350;
+		line-height: 2.5rem;
+		margin-bottom: 0;
+	}
+	
+	h4 {
+		color: #59a4d1;
+		line-height: 2.5rem;
+	}
+}

@@ -1,0 +1,53 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+
+// Textarea
+textarea {
+    resize: none;
+}
+
+// Required field
+.required-field {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 1.375rem;
+        top: 0;
+        display: block;
+        width: 0.5rem;
+        height: 0.6875rem;
+        background-image: url(../images/clip-icon.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 100;
+    }
+}
+
+.contact-form {
+	.btn {
+		background-color: $third-color;
+        padding: $spacer $spacer * 4;
+        
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+	}
+}
+
+.form-control {
+    border: 1px solid #eaeaea;
+
+    &:focus {
+        box-shadow: 0 0 0 0.2px $theme-color;
+    }
+}

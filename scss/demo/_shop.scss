@@ -1,0 +1,194 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	padding-bottom: 2.8rem;
+	position: relative;
+	line-height: 1 !important;
+	background-color: white;
+	border-radius: .43125rem;
+
+
+	.product-image {
+		position: relative;
+
+		a {
+			display: inline-block;
+			width: 100%;
+			position: relative;
+		}
+
+		> a:nth-of-type(2) {
+			background-color: $white;
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			@include transition(all 0.3s ease-in-out);
+		}
+
+		&:hover {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.product-mark-red {
+		position: absolute;
+		background-image: url(../images/mark_red.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		top: 0.6rem;
+		z-index: 100;
+		padding: 0.7rem $spacer;
+	}
+
+	.product-mark-blue {
+		position: absolute;
+		background-image: url(../images/mark_blue.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		top: 0.6rem;
+		z-index: 100;
+		padding: 0.7rem 1.2rem;
+	}
+
+	.add-to-wishlist {
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+		z-index: 100;
+	
+		i {
+			color: $third-color;	
+			font-size: 1.5rem;
+			margin-top: 0.75rem;
+			margin-right: 0.75rem;
+			@include transition(all 0.3s ease-in-out);
+
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+
+	.product-details {
+		background-color: white;
+		padding: 1.4rem 0 0 0;	
+	}
+
+	.product-categories {
+		text-align: left;
+
+		a {
+			color: $text-color;
+			font-family: $body-font;
+			line-height: $line-height-base;
+		}		
+	}
+
+	.product-price {
+		line-height: $line-height-base;
+		display: flex;
+		align-items: center;
+
+		.price-bg {
+			background-color: #f7da3b;
+			padding: 0.5rem 0.75rem;
+			text-align: center;
+			border: 1px solid #f7da3b;
+			border-radius: 4px;
+
+			h3 {
+				color: #f71646;
+			}
+			h5 {
+				color: #282828;
+			}
+		}
+
+		h3 {
+			color: #202020;
+		}
+	}
+
+	.product-info {
+		align-items: center;
+		padding-left: $spacer * 3;
+
+		h5 {
+			color: #cfe2ed;
+			padding: 0.7rem;
+		}
+
+		.select {
+			border: 1px solid #59a4d1;
+			border-radius: 4px;
+			padding: 0.35rem;
+			color: #59a4d1 !important;
+		}
+	}
+
+	.add-to-cart {
+		img {
+			width: 1.875rem;
+		}
+	}
+
+	.product-details-right {
+		position: absolute;
+		width: 30%;
+		right: 3rem;
+		transform: translateY(-40%);
+		z-index: 100;
+		top: 8rem;
+		
+		@include media-breakpoint-down(sm) {
+			top: 40%;
+		}
+		p {
+			line-height: 1.7;
+		}
+	}
+
+	.top {
+		top: 8rem !important;
+	}
+}
+
+
+
+
+
+

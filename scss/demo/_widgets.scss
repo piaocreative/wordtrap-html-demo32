@@ -1,0 +1,128 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+
+	.widget-subtitle {
+		font-size: 1.875rem;
+	}
+
+	.widget-title {
+		font-size: $font-size-base;
+		font-family: $body-font;
+		margin-bottom: 0.85rem;
+	}
+
+	&.widget-contact {
+		margin-top: -0.6rem;
+	}
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			margin-right: 5rem;
+
+			li {
+				padding: 0 0.25rem;
+
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					background-color: white;					
+					color: $theme-color;
+					display: inline-block;
+					line-height: 1.8125rem;
+					width: 1.8125rem;
+					height: 1.8125rem;		
+					vertical-align: middle;
+					text-align: center;
+					transition: all 0.3s ease-in-out;
+					border-radius: 50%;
+
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			li {
+				a {
+					color: $body-color;
+					font-weight: 300;
+					font-size: 1rem;
+					transition: all 0.3s ease-in-out;
+
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: $spacer / 4;
+				width: 3.5rem;
+				height: 2rem;
+				background-color: white;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin-right: 2.5rem;
+				
+				@include border-radius(spacer / 4);
+
+				&.visa {
+					background-image: url(../images/payments/visa.svg);
+				}
+
+				&.paypal {
+					background-image: url(../images/payments/paypal.svg);
+				}
+
+				&.express {
+					background-image: url(../images/payments/express.svg);
+				}
+
+				&.mastercard {
+					background-image: url(../images/payments/mastercard.svg);
+				}
+			}
+		}
+	}
+}
