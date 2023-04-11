@@ -95,7 +95,7 @@ h5,
 h6 {
 	color: $theme-color;
 	line-height: 1.25;
-	margin: 0 0 1.875rem 0;
+	margin: 0 0 1.5625vw 0;
 	font-family: $heading-font;
 	font-weight: 400;
 }
@@ -116,7 +116,7 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 1.875rem; }
+form { margin-bottom: 1.5625vw; }
 
 p,
 small { font-family: $body-font; }

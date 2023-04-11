@@ -17,7 +17,7 @@
 
 
 // Bootstrap
-@import "scss/bootstrap/bootstrap";
+@import "bootstrap/bootstrap";
 
 
 #demo32 {
@@ -37,6 +37,9 @@
     // Footer
     @import "demo/footer";
 
+
+    //Page
+    @import "demo/page.scss";
 
     // Page Title
     @import "demo/pagetitle";

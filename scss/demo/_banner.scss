@@ -15,16 +15,90 @@
 	Add here styles for banner. Thanks!
 -----------------------------------------------------------------*/
 
-
 #banner {
-    background-image: url(../images/banner/banner_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
+	.banner-button {
+		font-weight: 700;
+		background-color: $third-color;
+	};
+	.banner-head {
+		font-size: clamp(20px,5vw,5vw);
+	};
+	.banner1-text {
+		position: absolute;
+		left: 17.4vw;
+		top: 5vw;
+	};
+	.banner2-text {
+		.banner-button {
+			top: -2vw;
+		}
+	};
+	.banner3-text {
+		position: absolute;
+		left: 50vw;
+		top: 8vw;
+	}
+	@include media-breakpoint-up (lg) {
+		.banner1-text {
+			top: 12vw;
+		};
+	};
 
-    h2 {
-        color: $theme-color;
-        font-style: italic;
-    }
+	#indicator {
+		position: absolute;
+		left: 8vw;
+		bottom: 7vw;
+		li {
+			margin-left: 1vw;
+			margin-right: 1vw;
+		};
+		#slick-slide-control00.banner1::before {
+			content: $banner1-dot;
+		};
+		#slick-slide-control01.banner1::before {
+			content: $banner1-dot;
+		};
+		#slick-slide-control02.banner1::before {
+			content: $banner1-dot;
+		};
+		#slick-slide-control00.banner2::before {
+			content: $banner2-dot;
+		};
+		#slick-slide-control01.banner2::before {
+			content: $banner2-dot;
+		};
+		#slick-slide-control02.banner2::before {
+			content: $banner2-dot;
+		};
+		.slick-dots {
+			display: flex;
+			.slick-active.banner1 {
+				width: 5vw!important;
+				content: $banner1-dot-active;
+			}
+			.slick-active.banner2 {
+				width: 5vw!important;
+				content: $banner2-dot-active;
+			}
+		};
+		@include media-breakpoint-up (lg) {
+			left: 3.75vw;
+			bottom: 5vw;
+		}
+	};
+
+	#socialsite {
+		font-size: clamp(12px,1vw,1vw);
+		display: flex;
+		position: absolute;
+		right: -50px;
+		bottom: 18vw;
+		@include rotate(-90deg);
+		a {
+			padding-right: 2vw;
+		};
+		@include media-breakpoint-up (lg) {
+			bottom: 12vw;
+		}
+	}
 }
