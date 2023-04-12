@@ -9963,16 +9963,16 @@ textarea.form-control-lg {
 }
 #demo32 .main-section {
   position: relative;
-  background-image: url(../images/_404.png);
+  background-image: url(../../images/pages/404/_404.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 31vh;
+  height: 31vw;
   background-color: #eebfbe;
 }
 @media (min-width: 1200px) {
   #demo32 .main-section {
-    height: 50.7rem;
+    height: 36.7rem;
   }
 }
 #demo32 .error-404 {
@@ -9981,14 +9981,6 @@ textarea.form-control-lg {
   transform: translateX(-68%);
   left: 37%;
   transform: translateY(-36%);
-}
-@media (max-width: 991.98px) {
-  #demo32 .error-404 {
-    top: 79%;
-    transform: translateX(-68%);
-    left: 29%;
-    transform: translateY(-50%);
-  }
 }
 #demo32 .error-404 p {
   color: #2f363a;
