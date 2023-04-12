@@ -9731,6 +9731,12 @@ textarea.form-control-lg {
   	Blog
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
+  	Single Post
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	Post Comments
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
 
   	shop.scss
 
@@ -10183,20 +10189,13 @@ textarea.form-control-lg {
 }
 #demo32 .post {
   position: relative;
-  margin-bottom: 1.875rem;
+  margin-bottom: 3.735vw;
 }
 #demo32 .post-thumbnail {
+  display: block;
   position: relative;
-}
-#demo32 .post-thumbnail .line {
-  position: absolute;
-  left: 1.4rem;
-  bottom: -2px;
-  background-color: #f11656;
-  width: 2.7rem;
-  height: 5px;
-  z-index: 100;
-  border-radius: 24px;
+  width: 100%;
+  height: auto;
 }
 #demo32 .post-thumbnail a {
   display: block;
@@ -10208,24 +10207,115 @@ textarea.form-control-lg {
   object-position: center;
 }
 #demo32 .post-content {
-  padding-left: 1.4rem;
-  padding-bottom: 1.78rem;
-}
-#demo32 .entry-title p {
-  color: #100c0a;
-  font-size: 1.125rem;
-  line-height: 1;
-}
-#demo32 .entry-meta a p {
-  color: #cacaca;
-  line-height: 1;
-}
-#demo32 .entry-content {
   position: relative;
-  margin-bottom: 3.125rem;
+  padding: 1.815625vw 0 0;
+  margin-bottom: 1.55625vw;
 }
-#demo32 .entry-link {
-  padding-top: 1.4rem;
+#demo32 .entry-title h4, #demo32 .entry-title .h4 {
+  font-family: "Segoe UI", "Sans Serif";
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.51875vw;
+}
+#demo32 .entry-title h4 a:hover, #demo32 .entry-title .h4 a:hover {
+  color: #045586;
+}
+#demo32 .entry-meta {
+  list-style: none;
+  margin-bottom: 0;
+}
+#demo32 .entry-meta li {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+}
+#demo32 .entry-meta li a {
+  color: #7d7b78;
+}
+#demo32 .entry-meta li a:hover {
+  color: #045586;
+}
+#demo32 #single-post .post {
+  margin-bottom: 0.83vw;
+}
+#demo32 #single-post .post .post-content {
+  padding: 2.5rem 0;
+  display: block;
+}
+#demo32 #single-post .post .post-content .entry-title h1, #demo32 #single-post .post .post-content .entry-title .h1 {
+  font-family: "Segoe UI", "Sans Serif";
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+#demo32 #single-post .post .post-content .entry-meta {
+  width: 100%;
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+}
+#demo32 #single-post .post .post-content .entry-meta span {
+  margin-right: 0.9375rem;
+}
+#demo32 #single-post .post .post-content .entry-categories span {
+  display: inline-block;
+  padding: 0.375rem 0.625rem;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+}
+#demo32 #single-post .post .post-content .entry-content .h1, #demo32 #single-post .post .post-content .entry-content .h2, #demo32 #single-post .post .post-content .entry-content .h3, #demo32 #single-post .post .post-content .entry-content .h4, #demo32 #single-post .post .post-content .entry-content .h5, #demo32 #single-post .post .post-content .entry-content .h6, #demo32 #single-post .post .post-content .entry-content h1, #demo32 #single-post .post .post-content .entry-content h2, #demo32 #single-post .post .post-content .entry-content h3, #demo32 #single-post .post .post-content .entry-content h4, #demo32 #single-post .post .post-content .entry-content h5, #demo32 #single-post .post .post-content .entry-content h6 {
+  line-height: 1.4;
+}
+#demo32 #single-post .post .post-thumbnail {
+  border-radius: 0.5rem;
+}
+#demo32 .comments {
+  margin-top: 1.875rem;
+  padding: 2.5rem 0;
+  border-radius: 0.5rem;
+}
+#demo32 .comments .comments-title {
+  font-family: "Segoe UI", "Sans Serif";
+  font-size: 1.125rem;
+}
+#demo32 .comments .comments-title span {
+  color: #7d7b78;
+  font-size: 0.875rem;
+  margin-left: 0.625rem;
+}
+#demo32 .comments .comments-list .comment .comment-body {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+#demo32 .comments .comments-list .comment .comment-author-avatar {
+  margin-right: 0.9375rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+#demo32 .comments .comments-list .comment .comment-author-name {
+  margin-right: 0.9375rem;
+}
+#demo32 .comments .comments-list .comment .comment-metadata {
+  margin-right: 0.9375rem;
+}
+#demo32 .comments .comments-list .comment .comment-reply .comment-reply-link {
+  color: #045586;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#demo32 .comments .comments-list .comment .comment-content p {
+  margin-bottom: 0;
+}
+#demo32 .comments .comments-list .comment .children {
+  margin-left: 4.9375rem;
+}
+#demo32 .comments .comment-respond {
+  padding: 2.5rem 0;
+  border-radius: 0.5rem;
+}
+#demo32 .comments .comment-respond .comment-reply-title {
+  font-family: "Segoe UI", "Sans Serif";
+  font-size: 1.125rem;
 }
 #demo32 .product {
   padding-bottom: 2.8rem;
@@ -10378,9 +10468,6 @@ textarea.form-control-lg {
   #demo32 #footer-main {
     margin: 0;
   }
-}
-#demo32 #footer-main a {
-  color: #045586;
 }
 #demo32 #footer-bottom {
   background-color: white;
@@ -10686,13 +10773,12 @@ textarea.form-control-lg {
   line-height: 1.8125rem;
 }
 #demo32 .widget.widget-links ul li a {
-  color: #7d7b78;
   font-weight: 300;
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
 }
 #demo32 .widget.widget-links ul li a:hover {
-  color: white;
+  color: #045586;
 }
 #demo32 .widget.widget-payment .payments {
   display: flex;
