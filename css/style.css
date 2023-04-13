@@ -10048,6 +10048,9 @@ textarea.form-control-lg {
 #demo32 #header #header-wrap {
   padding: 0 3.75vw;
 }
+#demo32 #header .current {
+  color: #045586;
+}
 #demo32 #header .current a {
   color: #045586;
 }
