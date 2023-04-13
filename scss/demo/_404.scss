@@ -1,43 +1,15 @@
+/* ----------------------------------------------------------------
 
-.main-section {
-  position: relative;
-  background-image: url(../../images/pages/404/_404.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-	height: 31vw;
-	background-color: #eebfbe;
+	_404.scss
 
-	@include media-breakpoint-up(xl) {
-		height: 36.7rem;
-	}
-}
+-----------------------------------------------------------------*/
 
-.error-404 {
-  position: absolute;
-  top: 63%;
-  transform: translateX(-68%);
-  left: 37%;
-  transform: translateY(-36%);
+/* ----------------------------------------------------------------
+	_404
+-----------------------------------------------------------------*/
 
-	@include media-breakpoint-down(lg) {
-		// top: 79%;
-		// transform: translateX(-68%);
-		// left: 29%;
-		// transform: translateY(-50%);
-	}
-
-	p {
-		color: #2f363a;
-		font-size: 1.25rem;
-		font-family: $body-font;
-		font-weight: 350;
-		line-height: 2.5rem;
-		margin-bottom: 0;
-	}
-	
-	h4 {
-		color: #59a4d1;
-		line-height: 2.5rem;
+.error {
+	img {
+		width: 100%;
 	}
 }

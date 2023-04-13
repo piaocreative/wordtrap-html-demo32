@@ -130,6 +130,44 @@
 };
 
 /* ----------------------------------------------------------------
+	Top About
+-----------------------------------------------------------------*/
+
+#header.about {
+	background-color: #f3be41;
+	margin-bottom: -$header-height;
+	@include media-breakpoint-up (xl) {
+		margin-bottom: -2.8*$header-height;
+		background-color: transparent;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Top Contact
+-----------------------------------------------------------------*/
+
+#header.contact-us {
+	background-color: #ebafc4;
+	margin-bottom: -$header-height;
+	@include media-breakpoint-up (xl) {
+		margin-bottom: -2.8*$header-height;
+		background-color: transparent;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Top 404
+-----------------------------------------------------------------*/
+
+#header.error {
+	background-color: #eebfbe;
+	border: 1px solid $gray-100;
+	@include media-breakpoint-up (xl) {
+		background-color: transparent;
+		border: none;
+	}
+}
+/* ----------------------------------------------------------------
 	Top Infos
 -----------------------------------------------------------------*/
 
