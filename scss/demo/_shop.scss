@@ -89,9 +89,9 @@
 		right: 0;
 		cursor: pointer;
 		z-index: 100;
-	
+
 		i {
-			color: $third-color;	
+			color: $light-purple;
 			font-size: 1.5rem;
 			margin-top: 0.75rem;
 			margin-right: 0.75rem;
@@ -105,17 +105,17 @@
 
 	.product-details {
 		background-color: white;
-		padding: 1.4rem 0 0 0;	
+		padding: 1.4rem 0 0 0;
 	}
 
 	.product-categories {
 		text-align: left;
 
 		a {
-			color: $text-color;
+			color: $body-color;
 			font-family: $body-font;
 			line-height: $line-height-base;
-		}		
+		}
 	}
 
 	.product-price {
@@ -173,7 +173,7 @@
 		transform: translateY(-40%);
 		z-index: 100;
 		top: 8rem;
-		
+
 		@include media-breakpoint-down(sm) {
 			top: 40%;
 		}

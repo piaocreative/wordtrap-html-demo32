@@ -17,8 +17,16 @@
 
 #banner {
 	.banner-button {
-		font-weight: 700;
-		background-color: $third-color;
+		font-weight: 500;
+		background-color: $light-purple;
+		font-size: 8px;
+		padding: 0.2rem 0.4rem;
+		border-radius: 0.2rem;
+		@include media-breakpoint-up(md) {
+			padding: 0.6rem 0.8rem;
+			font-size: 1.2rem;
+			border-radius: 0.5rem;
+}
 	};
 	.banner-head {
 		font-size: clamp(20px,5vw,5vw);
@@ -30,7 +38,7 @@
 	};
 	.banner2-text {
 		.banner-button {
-			top: -2vw;
+			top: 25%;
 		}
 	};
 	.banner3-text {

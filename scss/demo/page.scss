@@ -48,7 +48,7 @@
 		}
 
 		button {
-			background-color: $third-color;
+			background-color: $light-purple;
 			padding: 1.2rem 2.5rem;
 			margin-top: 1.4rem;
 		}
@@ -103,7 +103,7 @@
 			filter: grayscale(100%);
 			opacity: 0.5;
 			position: relative;
-			border-top: 1px solid $third-color;
+			border-top: 1px solid $light-purple;
 			width: 17.3rem;
 		}
 
@@ -139,11 +139,11 @@
 
 		& + .event-date {
 			h3 {
-				color: $third-color;
+				color: $light-purple;
 			}
 
 			.dot {
-				background-color: $third-color;
+				background-color: $light-purple;
 			}
 
 			.line-divide {
