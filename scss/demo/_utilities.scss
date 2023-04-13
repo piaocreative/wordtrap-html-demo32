@@ -7,8 +7,8 @@
 
 // Font Family
 .body-font { font-family: $body-font !important; }
-.heading-font { font-family: $heading-font !important; }
-.third-font { font-family: $third-font !important; }
+.heading-font { font-family: $headings-font-family !important; }
+.third-font { font-family: $body-font !important; }
 
 // Font Weight
 .fw-semi-bold { font-weight: 700 !important; }
@@ -17,7 +17,7 @@
 // Text Color
 .theme-color { color: $theme-color; }
 .light-blue { color: $light-blue; }
-.third-color { color: $third-color; }
+.third-color { color: $light-purple; }
 .heading-color { color: $heading-color; }
 
 //line height
