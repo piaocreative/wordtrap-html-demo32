@@ -9770,7 +9770,11 @@ textarea.form-control-lg {
   /* ----------------------------------------------------------------
   	Add here styles for footer. Thanks!
   -----------------------------------------------------------------*/
-  /* Ads
+  /* home
+  -----------------------------------------------------------------*/
+  /* About
+  -----------------------------------------------------------------*/
+  /* Contact
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
 
@@ -10108,6 +10112,9 @@ textarea.form-control-lg {
 }
 #demo32 #top-links .nav-item {
   padding: 0 4px;
+}
+#demo32 #banner {
+  margin-top: 0;
 }
 #demo32 #banner .banner-button {
   font-weight: 500;
@@ -10503,23 +10510,117 @@ textarea.form-control-lg {
     padding-right: 0;
   }
 }
-#demo32 .about-bg {
+#demo32 .ads {
   position: relative;
-  background-image: url(../../images/pages/about/about-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 13.3rem;
-  padding-bottom: 9.9rem;
 }
-#demo32 .contact-bg {
-  background-image: url(../../images/pages/contact/contact-bg.png);
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 10.2rem;
-  padding-bottom: 3.9rem;
+#demo32 .ads .ads-body {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#demo32 .ads .ads-body .d-flex .ads-body-price {
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
+  font-size: 8rem;
+  font-family: "Fredoka One", cursives;
+}
+#demo32 .ads .ads-body .d-flex .ads-body-category {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+@media (min-width: 576px) {
+  #demo32 .ads .ads-body .d-flex .ads-body-price {
+    font-size: 2.5rem;
+    padding-right: 0.5vw;
+  }
+  #demo32 .ads .ads-body .d-flex .ads-body-category {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  #demo32 .ads .ads-body .d-flex .ads-body-price {
+    font-size: 3.75rem;
+  }
+}
+#demo32 .ads .ads-body .ads-body-button {
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  #demo32 .ads .ads-body .ads-body-button {
+    font-size: 0.8rem;
+  }
+}
+#demo32 .ads .ads-body.normal {
+  top: 15%;
+  height: 70%;
+  line-height: 0.8;
+}
+#demo32 .ads .ads-body.normal .ads-body-category {
+  font-size: 1.8rem;
+  color: #045586;
+}
+@media (min-width: 576px) {
+  #demo32 .ads .ads-body.normal .ads-body-category {
+    font-size: 0.75rem;
+  }
+}
+#demo32 .ads .ads-body.normal .ads-body-price {
+  font-size: 5rem;
+  color: white;
+  font-family: "Fredoka One", cursives;
+}
+@media (min-width: 576px) {
+  #demo32 .ads .ads-body.normal .ads-body-price {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #demo32 .ads .ads-body.normal .ads-body-price {
+    font-size: 4rem;
+  }
+}
+#demo32 .ads .ads-body.normal .ads-body-button {
+  font-family: "Fredoka One", cursives;
+  color: #59a4d1;
+}
+#demo32 .ads .ads-body.normal.center {
+  left: 50%;
+  top: 50%;
+}
+#demo32 .ads .ads-body.normal.center .ads-body-category {
+  font-size: 0.75rem;
+}
+@media (min-width: 576px) {
+  #demo32 .ads .ads-body.normal.center .ads-body-category {
+    font-size: 1rem;
+  }
+}
+#demo32 .ads .ads-body.normal.center .ads-body-price {
+  font-size: 2.5rem;
+}
+@media (min-width: 576px) {
+  #demo32 .ads .ads-body.normal.center .ads-body-price {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  #demo32 .ads .ads-body.normal.center .ads-body-price {
+    font-size: 5rem;
+  }
+}
+#demo32 .ads .ads-body.normal.center .ads-body-button {
+  font-size: 0.8rem;
+}
+@media (min-width: 576px) {
+  #demo32 .ads .ads-body.normal.center .ads-body-button {
+    font-size: 1.2rem;
+  }
 }
 #demo32 .bonus-bg {
   background-size: cover;
@@ -10554,6 +10655,50 @@ textarea.form-control-lg {
   background-color: #f11656;
   padding: 1.2rem 2.5rem;
   margin-top: 1.4rem;
+}
+#demo32 #best-seller .product h3, #demo32 #best-seller .product .h3 {
+  font-size: 1rem;
+}
+#demo32 #best-seller .product h4, #demo32 #best-seller .product .h4 {
+  font-size: 0.75rem;
+}
+#demo32 #best-seller .product h5, #demo32 #best-seller .product .h5 {
+  font-size: 0.5rem;
+}
+#demo32 #best-seller .product p {
+  font-size: 0.5rem;
+}
+@media (min-width: 576px) {
+  #demo32 #best-seller .product h3, #demo32 #best-seller .product .h3 {
+    font-size: 1.2rem;
+  }
+  #demo32 #best-seller .product h4, #demo32 #best-seller .product .h4 {
+    font-size: 1rem;
+  }
+  #demo32 #best-seller .product h5, #demo32 #best-seller .product .h5 {
+    font-size: 0.75rem;
+  }
+  #demo32 #best-seller .product p {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #demo32 #best-seller .product h3, #demo32 #best-seller .product .h3 {
+    font-size: 1.8rem;
+  }
+  #demo32 #best-seller .product h4, #demo32 #best-seller .product .h4 {
+    font-size: 1.5rem;
+  }
+  #demo32 #best-seller .product h5, #demo32 #best-seller .product .h5 {
+    font-size: 1rem;
+  }
+  #demo32 #best-seller .product p {
+    font-size: 0.75rem;
+  }
+}
+#demo32 #new {
+  padding-top: 5vw;
+  background-image: url("../../images/pages/home/new-bg.png");
 }
 #demo32 .events .event .event-thumbnail {
   filter: grayscale(100%);
@@ -10633,67 +10778,26 @@ textarea.form-control-lg {
   filter: grayscale(0) !important;
   opacity: 1 !important;
 }
-#demo32 .contact p {
-  color: #302f2d;
-}
-#demo32 .ads-section-top {
-  padding-top: 4.68rem;
-}
-#demo32 .ads {
+#demo32 .about-bg {
   position: relative;
-}
-#demo32 .ads h1, #demo32 .ads .h1 {
-  font-size: 5rem;
-  font-weight: normal;
-}
-#demo32 .ads p {
-  font-size: 1.2rem;
-}
-#demo32 .ads1 {
-  margin-top: 2.8rem;
-}
-@media (max-width: 1199.98px) {
-  #demo32 .ads1 {
-    margin-top: 0;
-  }
-}
-#demo32 .ads-body-top {
-  position: absolute;
-  top: 1.2rem;
-  left: 1.64rem;
-}
-#demo32 .ads-body-bottom {
-  position: absolute;
-  bottom: 1.2rem;
-  left: 1.64rem;
-}
-#demo32 .ads-body-middle {
-  position: absolute;
-  left: 1.64rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#demo32 .ads-body-center {
-  color: #7d7b78;
-}
-@media (min-width: 768px) {
-  #demo32 .ads-body-center {
-    position: absolute;
-    top: 0;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white !important;
-  }
-  #demo32 .ads-body-center h1, #demo32 .ads-body-center .h1, #demo32 .ads-body-center h5, #demo32 .ads-body-center .h5 {
-    color: white;
-  }
-}
-#demo32 .section-bg {
+  background-image: url(../../images/pages/about/about-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding-top: 13.3rem;
+  padding-bottom: 9.9rem;
+}
+#demo32 .contact-bg {
+  background-image: url(../../images/pages/contact/contact-bg.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10.2rem;
+  padding-bottom: 3.9rem;
+}
+#demo32 .contact p {
+  color: #302f2d;
 }
 #demo32 #page-title .title {
   display: block;
@@ -10755,6 +10859,7 @@ textarea.form-control-lg {
 }
 #demo32 .widget .widget-subtitle {
   font-size: 1.875rem;
+  font-family: "Abril Fatface", cursive;
 }
 #demo32 .widget .widget-title {
   font-size: 1rem;
@@ -10835,9 +10940,6 @@ textarea.form-control-lg {
 #demo32 .heading-font {
   font-family: "Fredoka One", cursives !important;
 }
-#demo32 .third-font {
-  font-family: "Segoe UI", "Sans Serif" !important;
-}
 #demo32 .fw-semi-bold {
   font-weight: 700 !important;
 }
@@ -10868,22 +10970,8 @@ textarea.form-control-lg {
 #demo32 img.img-full.img-pos-right {
   object-position: right;
 }
-#demo32 .section {
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-#demo32 .section-padding-top {
-  padding-top: 100px;
-}
-#demo32 .section-padding-bottom {
-  padding-bottom: 100px;
-}
-#demo32 .section-margin-top {
-  margin-top: 100px;
-}
-#demo32 .section-margin-bottom {
-  margin-bottom: 100px;
+#demo32 section {
+  margin: 5vw 0;
 }
 #demo32 .fbox {
   position: relative;
@@ -10922,25 +11010,25 @@ textarea.form-control-lg {
   line-height: 1;
   margin-bottom: 0;
 }
-#demo32 .logos {
-  margin-top: -5rem;
-  margin-bottom: -1.77rem;
-  display: flex;
-  justify-content: space-between;
+#demo32 #logos-partners {
+  margin-top: -45px;
 }
 #demo32 .logos .logo-item {
   border: 1px solid #eaeaea;
   border-radius: 0.3125rem;
   max-width: 10.625rem;
   height: 6.25rem;
-  width: 100%;
   display: flex !important;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-#demo32 .logos .logo-item img {
-  width: auto;
-  height: auto;
+#demo32 .logos .slick-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#demo32 .logos .slick-active .logo-item img {
+  padding: 10px 30px;
 }
 #demo32 .icon-box {
   display: flex;
