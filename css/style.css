@@ -9669,6 +9669,14 @@ textarea.form-control-lg {
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
 
+  	_404.scss
+
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	_404
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+
   	topbar.scss
 
   -----------------------------------------------------------------*/
@@ -9700,6 +9708,15 @@ textarea.form-control-lg {
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
   	Top Links
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	Top About
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	Top Contact
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	Top 404
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
   	Top Infos
@@ -9769,6 +9786,14 @@ textarea.form-control-lg {
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
   	Add here styles for footer. Thanks!
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+
+  	page.scss
+
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	Page
   -----------------------------------------------------------------*/
   /* home
   -----------------------------------------------------------------*/
@@ -9973,38 +9998,8 @@ textarea.form-control-lg {
 #demo32 a {
   transition: color 0.3s ease-in-out;
 }
-#demo32 .main-section {
-  position: relative;
-  background-image: url(../../images/pages/404/_404.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 31vw;
-  background-color: #eebfbe;
-}
-@media (min-width: 1200px) {
-  #demo32 .main-section {
-    height: 36.7rem;
-  }
-}
-#demo32 .error-404 {
-  position: absolute;
-  top: 63%;
-  transform: translateX(-68%);
-  left: 37%;
-  transform: translateY(-36%);
-}
-#demo32 .error-404 p {
-  color: #2f363a;
-  font-size: 1.25rem;
-  font-family: "Segoe UI", "Sans Serif";
-  font-weight: 350;
-  line-height: 2.5rem;
-  margin-bottom: 0;
-}
-#demo32 .error-404 h4, #demo32 .error-404 .h4 {
-  color: #59a4d1;
-  line-height: 2.5rem;
+#demo32 .error img {
+  width: 100%;
 }
 #demo32 #top-bar {
   background-color: #f11656;
@@ -10112,6 +10107,36 @@ textarea.form-control-lg {
 }
 #demo32 #top-links .nav-item {
   padding: 0 4px;
+}
+#demo32 #header.about {
+  background-color: #f3be41;
+  margin-bottom: -4.5rem;
+}
+@media (min-width: 1200px) {
+  #demo32 #header.about {
+    margin-bottom: -12.6rem;
+    background-color: transparent;
+  }
+}
+#demo32 #header.contact-us {
+  background-color: #ebafc4;
+  margin-bottom: -4.5rem;
+}
+@media (min-width: 1200px) {
+  #demo32 #header.contact-us {
+    margin-bottom: -12.6rem;
+    background-color: transparent;
+  }
+}
+#demo32 #header.error {
+  background-color: #eebfbe;
+  border: 1px solid #979797;
+}
+@media (min-width: 1200px) {
+  #demo32 #header.error {
+    background-color: transparent;
+    border: none;
+  }
 }
 #demo32 #banner {
   margin-top: 0;
