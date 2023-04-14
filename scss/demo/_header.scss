@@ -161,35 +161,48 @@
 
 #header.error {
 	background-color: #eebfbe;
-	border: 1px solid $gray-100;
 	@include media-breakpoint-up (xl) {
 		background-color: transparent;
-		border: none;
 	}
 }
 /* ----------------------------------------------------------------
-	Top Infos
+	Top wishlist,team,faqs
 -----------------------------------------------------------------*/
 
-
+#header.general {
+	background-color: #ebf4f9;
+	margin-bottom: -$header-height;
+}
 
 /* ----------------------------------------------------------------
-	Top Social
+	Top shop
 -----------------------------------------------------------------*/
 
-
+#header.shop {
+	background-color: #ebf4f9;
+	margin-bottom: -1.5*$header-height;
+	@include media-breakpoint-up (xl) {
+		margin-bottom: -2*$header-height;
+	}
+}
 
 /* ----------------------------------------------------------------
-	Top Login
+	Top single-post
 -----------------------------------------------------------------*/
 
-
+#header.single-post {
+	background-color: #ebf4f9;
+	margin-bottom: 0.5*$header-height;
+}
 
 /* ----------------------------------------------------------------
-	Top Search
+	Top product,member
 -----------------------------------------------------------------*/
 
-
+#header.product-header {
+	background-color: #ebf4f9;
+	margin-bottom: 0.5*$header-height;
+}
 
 /* ----------------------------------------------------------------
 	Top Cart

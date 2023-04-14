@@ -35,7 +35,7 @@
 
 			<!-- Header
 			============================================= -->
-			<header id="header">
+			<header id="header" class="general">
 
 				<div id="header-wrap">
 
@@ -47,7 +47,6 @@
 							============================================= -->
 							<a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
 								<img src="images/Logo1.png" alt="Saler Logo" id="logo1">
-								<img src="images/Logo2.png" alt="Saler Logo" class="d-none" id="logo2">
 							</a>
 
 							<!-- Navbar Toggler
@@ -131,8 +130,7 @@
 										</li>
 										<li class="nav-item">
 											<a href="#" class="nav-link">
-												<img src="images/icons/add_bag/add_bag.png" alt="Add bag" class="addbag" id="bluebag">
-												<img src="images/icons/add_bag/add_bag_white.png" alt="Add bag" class="addbag d-none" id="whitebag">
+												<img src="images/icons/bag_icon/add_bag.png" alt="Add bag" class="addbag" id="bluebag">
 											</a>
 										</li>
 									</ul>
@@ -149,131 +147,123 @@
 
 			</header><!-- #header -->
 
-			<!-- Content
+			<!-- Main
 			============================================= -->
-			<main id="content">
+			<main id="wishlist-page">
 
-				<div class="page-content">
+				<div class="container">
 
-					<div class="section pt-0">
-
-						<div class="container">
-
-							<div id="page-title">
-								<h1 class="title">My Wishlist</h1>
-							</div>
-
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="wishlist-content">
-										<div class="table-responsive">
-											<table class="table shop-table" cellspacing="0">
-												<thead>
-													<tr>
-														<th>Image</th>
-														<th>Product</th>
-														<th>Price</th>
-														<th>Stock Status</th>
-														<th>Actions</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr class="wishlist-item">
-														<td class="product-thumbnail">
-															<a href="product.html">
-																<img width="100" height="100" src="./images/shop/featured_product1.png" alt="Dress" class="img-fluid">
-															</a>
-														</td>
-														<td class="product-name">
-															<a href="product.html">Causal Crossbody Bags</a>
-															<br />
-															<a href="#" class="product-delete">Delete</a>
-														</td>
-														<td class="product-price">$79.00</td>
-														<td class="product-quantity">
-															<div class="quantity input-group">
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
-																</div>
-																<input type="number" class="form-control qty" value="1" min="1" disabled>
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
-																</div>
-															</div>
-														</td>
-														<td class="product-actions">
-															<a herf="#" class="btn btn-secondary">Quick View</a>
-															<a herf="#" class="btn btn-primary">Select Options</a>
-														</td>
-													</tr>
-													<tr class="wishlist-item">
-														<td class="product-thumbnail">
-															<a href="product.html">
-																<img width="100" height="100" src="./images/shop/featured_product2.png" alt="Dress" class="img-fluid">
-															</a>
-														</td>
-														<td class="product-name">
-															<a href="product.html">Causal Crossbody Bags</a>
-															<br />
-															<a href="#" class="product-delete">Delete</a>
-														</td>
-														<td class="product-price">$79.00</td>
-														<td class="product-quantity">
-															<div class="quantity input-group">
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
-																</div>
-																<input type="number" class="form-control qty" value="1" min="1" disabled>
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
-																</div>
-															</div>
-														</td>
-														<td class="product-actions">
-															<a herf="#" class="btn btn-secondary">Quick View</a>
-															<a herf="#" class="btn btn-primary">Select Options</a>
-														</td>
-													</tr>
-													<tr class="wishlist-item">
-														<td class="product-thumbnail">
-															<a href="product.html">
-																<img width="100" height="100" src="./images/shop/featured_product3.png" alt="Dress" class="img-fluid">
-															</a>
-														</td>
-														<td class="product-name">
-															<a href="product.html">Causal Crossbody Bags</a>
-															<br />
-															<a href="#" class="product-delete">Delete</a>
-														</td>
-														<td class="product-price">$79.00</td>
-														<td class="product-quantity">
-															<div class="quantity input-group">
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
-																</div>
-																<input type="number" class="form-control qty" value="1" min="1" disabled>
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
-																</div>
-															</div>
-														</td>
-														<td class="product-actions">
-															<a herf="#" class="btn btn-secondary">Quick View</a>
-															<a herf="#" class="btn btn-primary">Select Options</a>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
+					<div id="page-title">
+						<h1 class="title">My Wishlist</h1>
 					</div>
 
-				</div><!-- .page-content -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="wishlist-content">
+								<div class="table-responsive">
+									<table class="table shop-table" cellspacing="0">
+										<thead>
+											<tr>
+												<th>Image</th>
+												<th>Product</th>
+												<th>Price</th>
+												<th>Stock Status</th>
+												<th>Actions</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="wishlist-item">
+												<td class="product-thumbnail">
+													<a href="product.html">
+														<img width="100" height="100" src="./images/shop/featured_product1.png" alt="Dress" class="img-fluid">
+													</a>
+												</td>
+												<td class="product-name">
+													<a href="product.html">Causal Crossbody Bags</a>
+													<br />
+													<a href="#" class="product-delete">Delete</a>
+												</td>
+												<td class="product-price">$79.00</td>
+												<td class="product-quantity">
+													<div class="quantity input-group">
+														<div class="input-group-prepend">
+															<p class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></p>
+														</div>
+														<input type="number" class="form-control qty" value="1" min="1" disabled>
+														<div class="input-group-prepend">
+															<p class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></p>
+														</div>
+													</div>
+												</td>
+												<td class="product-actions">
+													<a herf="#" class="btn btn-secondary">Quick View</a>
+													<a herf="#" class="btn btn-primary">Select Options</a>
+												</td>
+											</tr>
+											<tr class="wishlist-item">
+												<td class="product-thumbnail">
+													<a href="product.html">
+														<img width="100" height="100" src="./images/shop/featured_product2.png" alt="Dress" class="img-fluid">
+													</a>
+												</td>
+												<td class="product-name">
+													<a href="product.html">Causal Crossbody Bags</a>
+													<br />
+													<a href="#" class="product-delete">Delete</a>
+												</td>
+												<td class="product-price">$79.00</td>
+												<td class="product-quantity">
+													<div class="quantity input-group">
+														<div class="input-group-prepend">
+															<p class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></p>
+														</div>
+														<input type="number" class="form-control qty" value="1" min="1" disabled>
+														<div class="input-group-prepend">
+															<p class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></p>
+														</div>
+													</div>
+												</td>
+												<td class="product-actions">
+													<a herf="#" class="btn btn-secondary">Quick View</a>
+													<a herf="#" class="btn btn-primary">Select Options</a>
+												</td>
+											</tr>
+											<tr class="wishlist-item">
+												<td class="product-thumbnail">
+													<a href="product.html">
+														<img width="100" height="100" src="./images/shop/featured_product3.png" alt="Dress" class="img-fluid">
+													</a>
+												</td>
+												<td class="product-name">
+													<a href="product.html">Causal Crossbody Bags</a>
+													<br />
+													<a href="#" class="product-delete">Delete</a>
+												</td>
+												<td class="product-price">$79.00</td>
+												<td class="product-quantity">
+													<div class="quantity input-group">
+														<div class="input-group-prepend">
+															<p class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></p>
+														</div>
+														<input type="number" class="form-control qty" value="1" min="1" disabled>
+														<div class="input-group-prepend">
+															<p class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></p>
+														</div>
+													</div>
+												</td>
+												<td class="product-actions">
+													<a herf="#" class="btn btn-secondary">Quick View</a>
+													<a herf="#" class="btn btn-primary">Select Options</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 
 			</main><!-- #content -->
 

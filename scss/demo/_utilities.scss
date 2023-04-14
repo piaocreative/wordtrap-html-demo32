@@ -19,8 +19,6 @@
 .third-color { color: $light-purple; }
 .heading-color { color: $heading-color; }
 
-//line height
-// .lh-semi { line-height: 1.18; }
 //-------------------- Image --------------------//
 
 img {
@@ -40,8 +38,125 @@ img {
 	}
 }
 
+/* ----------------------------------------------------------------
+	Tabs
+-----------------------------------------------------------------*/
+
+.nav-tabs,
+.nav-pills {
+	border-bottom: 0;
+	margin-bottom: 1rem;
+
+	.nav-link {
+		font-size: 1.125rem;
+		font-weight: 700;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+}
+
 
 //-------------------- Section ------------------//
 section {
 	margin: 5vw 0;
+}
+
+/* ----------------------------------------------------------------
+	Bootstarp Slider
+-----------------------------------------------------------------*/
+
+.slider.slider-horizontal {
+	width: 100%;
+
+	.slider-track {
+		height: 5px;
+	}
+}
+
+.slider-track {
+	background-color: #f5f5f5;;
+	background-image: none;
+
+	@include box-shadow(none);
+}
+
+.slider-selection,
+.slider-handle {
+	background-color: $theme-color;
+	background-image: none;
+
+	@include box-shadow(none);
+}
+
+.slider-handle {
+	width: 14px;
+	height: 14px;
+}
+
+/* ----------------------------------------------------------------
+	Accordion
+-----------------------------------------------------------------*/
+
+.accordion-header {
+	margin-bottom: 0;
+}
+
+.accordion-button {
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.accordion-body {
+	padding-top: 0;
+}
+
+.accordion-item {
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------------
+	Pagination
+-----------------------------------------------------------------*/
+
+.pagination {
+	.page-item {
+		margin-left: 0.5rem;
+
+		&.prev {
+			.page-link {
+				&::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-right: 0.625rem;
+				}
+
+				&:hover::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+
+		&.next {
+			.page-link {
+				&::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-left: 0.625rem;
+				}
+
+				&:hover::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+
+		.page-link {
+			line-height: 1;
+			position: relative;
+
+			@include border-radius($pagination-border-radius);
+		}
+	}
 }
