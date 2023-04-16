@@ -11497,7 +11497,7 @@ textarea.form-control-lg {
   appearance: none;
   background-image: none;
   border: 1px solid #dcdcdc;
-  border-radius: 50%;
+  border-radius: 3px;
   cursor: pointer;
   display: inline-block;
   outline: 0;
