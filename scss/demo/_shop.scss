@@ -63,7 +63,7 @@
 
 	.product-mark-red {
 		position: absolute;
-		background-image: url(../../images/icons/mark_bg/mark_red.png);
+		background-image: url('../../images/icons/mark_bg/mark_red.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
@@ -74,7 +74,7 @@
 
 	.product-mark-blue {
 		position: absolute;
-		background-image: url(../../images/icons/mark_bg/mark_blue.png);
+		background-image: url('../../images/icons/mark_bg/mark_blue.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
@@ -145,7 +145,6 @@
 
 	.product-info {
 		align-items: center;
-		padding-left: $spacer * 3;
 
 		h5 {
 			color: #cfe2ed;
@@ -184,6 +183,36 @@
 
 	.top {
 		top: 8rem !important;
+	}
+
+	.add-to-cart,
+	.add-to-wishlist {
+		color: $black;
+		font-size: $h3-font-size;
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+
+	.onsale {
+		position: absolute;
+		top: 2rem;
+		left: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 2.7rem;
+		height: 2.7rem;
+		color: $white;
+		margin-top: -2rem;
+		margin-right: 0.2rem;
+		font-family: $body-font;
+	}
+
+	.onsale {
+		background-color: $theme-color;
 	}
 }
 

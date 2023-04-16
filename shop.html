@@ -39,7 +39,7 @@
 
 			<!-- Header
 			============================================= -->
-			<header id="header" class="shop">
+			<header class="header" id="shop-header">
 
 				<div id="header-wrap">
 
@@ -155,16 +155,23 @@
 			============================================= -->
 			<main id="main">
 
-				<section>
+				<!-- Page title
+				============================================= -->
+				<section id="page-title">
+
 					<div class="container">
-						<div id="page-title">
-							<h1 class="title">Shop</h1>
-						</div>
+						<h1 class="title">Shop</h1>
+					</div>
+
+				</section><!-- #page-title -->
+
+				<!-- Shop page main
+				============================================= -->
+				<section id="shop-page-main">
+
+					<div class="container">
 						<div class="row">
 							<div class="col-lg-3">
-
-								<!-- Sidebar
-								============================================= -->
 								<div class="sidebar">
 									<div class="widget product-filters">
 										<h4 class="widget-title text-uppercase">Categories</h4>
@@ -313,20 +320,84 @@
 								</div>
 							</div>
 							<div class="col-lg-9">
-
-								<!-- Ads
-								============================================= -->
-								<div class="ads">
-									<div class="ads-bg">
-										<div class="ads-bg-img">
-											<img src="images/ads/ads1_1.png" alt="ads1" class="img-fluid">
+								<div class="row">
+									<div class="col-sm-3 mb-3 mb-sm-0">
+										<div class="ads">
+											<div class="ads-bg">
+												<a href="#">
+													<img src="./images/ads/ads1.png" alt="Ads Image" class="img-full">
+												</a>
+											</div>
+											<div class="ads-body text-white">
+												<div class="d-flex">
+													<p class="ads-body-price">$15</p>
+													<p class="ads-body-category">jersey <br> from 15 $</p>
+												</div>
+												<a href="#" class="ads-body-button text-white">Shop Now</a>
+											</div>
 										</div>
 									</div>
-									<div class="ads-body">
-										<h4>BAGS</h4>
-										<h2 class="title mb-0">New<br> <span class="fw-normal title">Collection</span> </h2>
-										<h4 class="mb-0 fw-normal lh-sm">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</h4>
-										<h2 class="text-primary mb-0 mt-4 fw-bold">$79<small>.00</small> </h2>
+									<div class="col-sm-9 d-flex flex-column justify-content-between">
+										<div class="row">
+											<div class="col-sm-4 mb-3 mb-sm-0">
+												<div class="ads">
+													<div class="ads-bg ">
+														<a href="#">
+															<img src="./images/ads/ads2.png" alt="Ads Image" class="img-full">
+														</a>
+													</div>
+													<div class="ads-body normal">
+														<p class="ads-body-category">Cosmic <br>discounts</p>
+														<p class="ads-body-price">50%</p>
+														<a href="#" class="ads-body-button">Shop Now</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-4 mb-3 mb-sm-0">
+												<div class="ads">
+													<div class="ads-bg">
+														<a href="#">
+															<img src="./images/ads/ads3.png" alt="Ads Image" class="img-full">
+														</a>
+													</div>
+													<div class="ads-body normal">
+														<p class="ads-body-category text-white">Clothing <br>for babies</p>
+														<p class="ads-body-price">$5</p>
+														<a href="#" class="ads-body-button text-white">Shop Now</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-4 mb-3 mb-sm-0">
+												<div class="ads">
+												<div class="ads-bg">
+													<a href="#">
+													<img src="./images/ads/ads4.png" alt="Ads Image" class="img-full">
+													</a>
+												</div>
+												<div class="ads-body normal">
+													<p class="ads-body-category text-white">Warm <br>clothes</p>
+													<p class="ads-body-price text-white">15%</p>
+													<a href="#" class="ads-body-button text-white">Shop Now</a>
+												</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="ads">
+												<div class="ads-bg">
+													<a href="#">
+														<img src="./images/ads/ads5.png" alt="Ads Image" class="img-full">
+													</a>
+												</div>
+												<div class="ads-body normal center">
+													<div class="translate-middle text-center">
+														<p class="ads-body-price">80%</p>
+														<p class="ads-body-category text-white">Last year's collection for teens</p>
+														<a href="#" class="ads-body-button text-white">Shop Now</a>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-between my-4">
@@ -341,197 +412,538 @@
 									<div class="products-layouts-mode">
 										<label for="showby">Show:</label>
 										<select id="showby" class="ms-3">
-											<option value="9">9</option>
-											<option value="18">18</option>
-											<option value="27">27</option>
+											<option value="16">16</option>
+											<option value="32">32</option>
+											<option value="48">48</option>
 										</select>
 									</div>
 								</div>
-								<div class="row products">
-									<div class="col-sm-6 col-md-4">
-
-										<div class="product">
-											<div class="product-image">
-												<a href="#">
-													<img src="images/shop/featured_product1.png" alt="Featured Image" class="img-fluid">
-												</a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star empty"></i>
+								<div>
+									<div class="row">
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-red">
+														<h4 class="text-white mb-0 fs-4">45%</h4>
+													</div>
+													<div class="add-to-wishlist"><i class="far fa-heart"></i></div>
 												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="d-flex justify-content-around align-items-center mx-5">
-													<a href="#" class="add-to-cart"><i class="far fa-heart"></i></a>
-													<div class="product-price pt-0">$79<small>.00</small></div>
-													<a href="#" class="add-to-wishlist"><i class="fas fa-shopping-cart"></i></a>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="product">
-											<div class="product-image">
-												<a href="#"><img src="images/shop/featured_product2.png" alt="Featured Image" class="img-fluid"></a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
+									<div class="row">
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-red">
+														<h4 class="text-white mb-0 fs-4">45%</h4>
+													</div>
+													<div class="add-to-wishlist"><i class="far fa-heart"></i></div>
 												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
-											</div>
-											<div class="onsale">Sale</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="product">
-											<div class="product-image">
-												<a href="#"><img src="images/shop/featured_product3.png" alt="Featured Image" class="img-fluid"></a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
 												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
-											</div>
-											<div class="onsale">-70%</div>
-											<div class="onhit ms-5">Hit</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="product">
-											<div class="product-image">
-												<a href="#"><img src="images/shop/featured_product4.png" alt="Featured Image" class="img-fluid"></a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="product-price">$79<small>.00</small></div>
 											</div>
 										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="product">
-											<div class="product-image">
-												<a href="#"><img src="images/shop/featured_product2.png" alt="Featured Image" class="img-fluid"></a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star empty"></i>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
 												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
-											</div>
-											<div class="onsale">-70%</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="product">
-											<div class="product-image">
-												<a href="#"><img src="images/shop/featured_product1.png" alt="Featured Image" class="img-fluid"></a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star empty"></i>
-													<i class="fas fa-star empty"></i>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
 												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
-											</div>
-											<div class="onhit">Hit</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="product">
-											<div class="product-image">
-												<a href="#"><img src="images/shop/featured_product4.png" alt="Featured Image" class="img-fluid"></a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star empty"></i>
-												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="product-price">$79<small>.00</small></div>
 											</div>
 										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-
-										<div class="product">
-											<div class="product-image">
-												<a href="#"><img src="images/shop/featured_product3.png" alt="" class="img-fluid"></a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star empty"></i>
-													<i class="fas fa-star empty"></i>
-													<i class="fas fa-star empty"></i>
-													<i class="fas fa-star empty"></i>
-													<i class="fas fa-star empty"></i>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
 												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a> </div>
-												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
 											</div>
-											<div class="onsale">-70%</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="product">
-											<div class="product-image">
-												<a href="#">
-													<img src="images/shop/featured_product1.png" alt="Top Image" class="img-fluid">
-												</a>
-											</div>
-											<div class="product-details">
-												<div class="product-rating">
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star"></i>
-													<i class="fas fa-star empty"></i>
-													<i class="fas fa-star empty"></i>
+									<div class="row">
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
 												</div>
-												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-												<div class="product-categories"><a href="#">michael kors</a></div>
-												<div class="product-price">$79<small>.00</small></div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-red">
+														<h4 class="text-white mb-0">45%</h4>
+													</div>
+													<div class="add-to-wishlist"><i class="far fa-heart"></i></div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+																<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product1.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product3.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-red">
+														<h4 class="text-white mb-0">45%</h4>
+													</div>
+													<div class="add-to-wishlist"><i class="far fa-heart"></i></div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-3 col-md-6">
+											<div class="product text-center">
+												<div class="product-image">
+													<a href="#">
+														<img src="./images/shop/featured_product2.png" alt="Featured Image" class="img-full">
+													</a>
+													<a href="#">
+														<img src="./images/shop/featured_product4.png" alt="Featured Image" class="img-full">
+													</a>
+													<div class="product-mark-blue">
+														<h4 class="text-white mb-0">hit</h4>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="product-categories">
+														<p class="fw-semi-light fs-4 mb-2">Sweater with colored stripes for a boy</p>
+													</div>
+													<div class="d-flex justify-content-between align-items-center pt-4">
+														<div class="product-price pt-0">
+															<div class="product-price pt-0">
+															<h3 class="mb-0">$29</h3>
+															</div>
+														</div>
+														<div class="product-info d-flex">
+															<h5 class="mb-0">128</h5>
+															<h5 class="select mb-0">134</h5>
+															<h5 class="mb-0">140</h5>
+														</div>
+														<a href="#" class="add-to-cart"><img src="images/icons/bag_icon/add_bag.png"></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -540,9 +952,9 @@
 									<div class="products-layouts-mode mb-3 mb-sm-0">
 										<label for="showby">Show:</label>
 										<select id="showby" class="ms-3">
-											<option value="9">9</option>
-											<option value="18">18</option>
-											<option value="27">27</option>
+											<option value="16">16</option>
+											<option value="32">32</option>
+											<option value="48">48</option>
 										</select>
 									</div>
 									<nav aria-label="Page navigation example">
@@ -558,7 +970,8 @@
 							</div>
 						</div>
 					</div>
-				</section>
+
+				</section><!-- #shop-page-main -->
 
 			</main><!-- #main -->
 
@@ -571,9 +984,7 @@
 				<div id="footer-main">
 
 					<div class="container-fluid">
-
 						<div class="row">
-
 							<div class="col-lg-3 col-12">
 								<div class="widget widget-custom-html">
 									<a href="#">
@@ -587,7 +998,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-lg-6 col-12">
 								<div class="row">
 									<div class="col-lg-5 col-12">
@@ -639,7 +1049,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-lg-3 col-12 text-lg-end text-start">
 								<div class="widget widget-custom-html">
 									<a href="#">
@@ -655,9 +1064,7 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 
 				</div><!-- #footer-main -->
@@ -667,9 +1074,7 @@
 				<div id="footer-bottom">
 
 					<div class="container-fluid">
-
 						<div class="d-md-flex justify-content-between align-items-center g-0">
-
 							<div class="widget widget-payment mb-md-0 mb-3">
 								<div class="widget-content">
 									<div class="payments">
@@ -680,7 +1085,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="widget widget-social d-flex text-end">
 								<ul class="social-icons d-flex align-items-center justify-content-end">
 									<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
@@ -689,9 +1093,7 @@
 								</ul>
 								<p class="copyright body-font theme-color my-1 fs-5">&copy; Copyright 2021</p>
 							</div>
-
 						</div>
-
 					</div>
 
 				</div><!-- #footer-bottom -->
@@ -699,11 +1101,6 @@
 			</footer><!-- #footer -->
 
 		</div>
-
-		<!-- Go To Top
-		============================================= -->
-		<div id="gotoTop" class="icon-angle-up"></div>
-
 
 		<!-- External JavaScripts
 		============================================= -->

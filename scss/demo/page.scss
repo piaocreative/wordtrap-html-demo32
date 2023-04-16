@@ -297,7 +297,7 @@
 /* Contact
 -----------------------------------------------------------------*/
 
-.contact-bg {
+#contact-bg {
 	background-image: url(../../images/pages/contact/contact-bg.png);
 	position: relative;
 	background-repeat: no-repeat;
@@ -307,7 +307,7 @@
 	padding-bottom: 3.9rem;
 };
 
-.contact {
+#contact {
 	p {
 		color: $heading-color;
 	};
@@ -401,59 +401,58 @@
 	Single Member Page
 -----------------------------------------------------------------*/
 
-#single-member-page {
-	.team-member {
-		padding: 0;
+.team-member {
+	padding: 0;
 
-		.member-details {
-			padding: 0 3rem 3rem 3rem;
-		}
+	.member-details {
+		padding: 0 3rem 3rem 3rem;
 	}
+}
 
-	#member-services {
-		.member-service {
-			padding-left: 2.25rem;
-			position: relative;
+#member-services {
+	.member-service {
+		padding-left: 2.25rem;
+		position: relative;
 
-			&::before {
-				content: "";
-				background-image: escape-svg($checker-icon);
-				background-repeat: no-repeat;
-				background-size: 100%;
-				display: block;
-				width: 1rem;
-				height: 0.8125rem;
-				position: absolute;
-				left: 0;
-				top: 0;
-			}
-
-			h3 {
-				font-family: $body-font;
-				font-size: 1rem;
-				margin-bottom: 1.375rem;
-			}
+		&::before {
+			content: "";
+			background-image: escape-svg($checker-icon);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			display: block;
+			width: 1rem;
+			height: 0.8125rem;
+			position: absolute;
+			left: 0;
+			top: 0;
 		}
-	}
 
-	#member-portfolios {
-		.member-portfolio {
-			margin-bottom: 1.875rem;
-
-			img {
-				margin-bottom: 1.5rem;
-
-				@include border-radius(0.5rem);
-			}
-
-			h3 {
-				font-family: $body-font;
-				font-size: 1rem;
-				margin-bottom: 0;
-			}
+		h3 {
+			font-family: $body-font;
+			font-size: 1rem;
+			margin-bottom: 1.375rem;
 		}
 	}
 }
+
+#member-portfolios {
+	.member-portfolio {
+		margin-bottom: 1.875rem;
+
+		img {
+			margin-bottom: 1.5rem;
+
+			@include border-radius(0.5rem);
+		}
+
+		h3 {
+			font-family: $body-font;
+			font-size: 1rem;
+			margin-bottom: 0;
+		}
+	}
+}
+
 
 
 /* ----------------------------------------------------------------
@@ -558,7 +557,7 @@
 	Single Product Page
 -----------------------------------------------------------------*/
 
-.single-product-page {
+#single-product-page {
 	.product-thumbnail {
 		position: relative;
 
@@ -789,7 +788,7 @@
 
 		.shop-table {
 			td, th {
-				border-color: $light;
+				border-color: $gray-200;
 				border-bottom-width: 1px;
 				color: $headings-color;
 				padding: 1rem 0;
