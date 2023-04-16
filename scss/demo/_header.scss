@@ -13,7 +13,7 @@
 	Header
 -----------------------------------------------------------------*/
 
-#header {
+.header {
 	position: relative;
 	z-index: 10;
 	&.yellow-header {
@@ -133,7 +133,7 @@
 	Top About
 -----------------------------------------------------------------*/
 
-#header.about {
+.header#about-header {
 	background-color: #f3be41;
 	margin-bottom: -$header-height;
 	@include media-breakpoint-up (xl) {
@@ -146,7 +146,7 @@
 	Top Contact
 -----------------------------------------------------------------*/
 
-#header.contact-us {
+.header#contact-us-header {
 	background-color: #ebafc4;
 	margin-bottom: -$header-height;
 	@include media-breakpoint-up (xl) {
@@ -159,7 +159,7 @@
 	Top 404
 -----------------------------------------------------------------*/
 
-#header.error {
+.header#error-header {
 	background-color: #eebfbe;
 	@include media-breakpoint-up (xl) {
 		background-color: transparent;
@@ -169,7 +169,7 @@
 	Top wishlist,team,faqs
 -----------------------------------------------------------------*/
 
-#header.general {
+.header.header-etc {
 	background-color: #ebf4f9;
 	margin-bottom: -$header-height;
 }
@@ -178,7 +178,7 @@
 	Top shop
 -----------------------------------------------------------------*/
 
-#header.shop {
+.header#shop-header {
 	background-color: #ebf4f9;
 	margin-bottom: -1.5*$header-height;
 	@include media-breakpoint-up (xl) {
@@ -190,7 +190,7 @@
 	Top single-post
 -----------------------------------------------------------------*/
 
-#header.single-post {
+.header#single-post-header {
 	background-color: #ebf4f9;
 	margin-bottom: 0.5*$header-height;
 }
@@ -199,18 +199,9 @@
 	Top product,member
 -----------------------------------------------------------------*/
 
-#header.product-header {
+.header.header-product-member {
 	background-color: #ebf4f9;
 	margin-bottom: 0.5*$header-height;
 }
 
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
-
-
-
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
 

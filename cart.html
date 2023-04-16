@@ -35,7 +35,7 @@
 
 			<!-- Header
 			============================================= -->
-			<header id="header" class="general">
+			<header class="header header-etc">
 
 				<div id="header-wrap">
 
@@ -147,205 +147,205 @@
 
 			</header><!-- #header -->
 
-			<!-- Content
+			<!-- Main
 			============================================= -->
-			<main id="content">
+			<main id="main">
 
-				<div class="page-content">
+				<!-- Page title
+				============================================= -->
+				<section id="page-title">
 
-					<div class="section pt-0">
+					<div class="container">
+						<h1 class="title">Shopping Cart</h1>
+					</div>
 
-						<div class="container">
+				</section><!-- #page-title -->
 
-							<div id="page-title">
-								<h1 class="title">Shopping Cart</h1>
-							</div>
+				<!-- Cart main
+				============================================= -->
+				<section id="cart-page-main">
 
-							<div class="row">
-								<div class="col-lg-8">
-									<form class="cart-form" action="cart.html" method="post">
-										<div class="table-responsive">
-											<table class="table shop-table" cellspacing="0">
-												<thead>
-													<tr>
-														<th>Image</th>
-														<th>Product</th>
-														<th>Price</th>
-														<th>Quantity</th>
-														<th>Subtotal</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr class="cart-item">
-														<td class="product-thumbnail">
-															<a href="product.html">
-																<img width="100" height="100" src="./images/shop/featured_product1.png" alt="Causal Crossbody Bags" class="img-fluid">
-															</a>
-														</td>
-														<td class="product-name">
-															<a href="product.html">Causal Crossbody Bags</a>
-															<br />
-															<a href="#" class="product-wishlist">Wishlist</a>
-															<a href="#" class="product-delete">Delete</a>
-														</td>
-														<td class="product-price">$79.00</td>
-														<td class="product-quantity">
-															<div class="quantity input-group">
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
-																</div>
-																<input type="number" class="form-control qty" value="1" min="1" disabled>
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
-																</div>
-															</div>
-														</td>
-														<td class="product-subtotal">
-															$79.00
-														</td>
-													</tr>
-													<tr class="cart-item">
-														<td class="product-thumbnail">
-															<a href="product.html">
-																<img width="100" height="100" src="./images/shop/featured_product2.png" alt="Causal Crossbody Bags" class="img-fluid">
-															</a>
-														</td>
-														<td class="product-name">
-															<a href="product.html">Causal Crossbody Bags</a>
-															<br />
-															<a href="#" class="product-wishlist">Wishlist</a>
-															<a href="#" class="product-delete">Delete</a>
-														</td>
-														<td class="product-price">$79.00</td>
-														<td class="product-quantity">
-															<div class="quantity input-group">
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
-																</div>
-																<input type="number" class="form-control qty" value="1" min="1" disabled>
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
-																</div>
-															</div>
-														</td>
-														<td class="product-subtotal">
-															$79.00
-														</td>
-													</tr>
-													<tr class="cart-item">
-														<td class="product-thumbnail">
-															<a href="product.html">
-																<img width="100" height="100" src="./images/shop/featured_product3.png" alt="Causal Crossbody Bags" class="img-fluid">
-															</a>
-														</td>
-														<td class="product-name">
-															<a href="product.html">Causal Crossbody Bags</a>
-															<br />
-															<a href="#" class="product-wishlist">Wishlist</a>
-															<a href="#" class="product-delete">Delete</a>
-														</td>
-														<td class="product-price">$79.00</td>
-														<td class="product-quantity">
-															<div class="quantity input-group">
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
-																</div>
-																<input type="number" class="form-control qty" value="1" min="1" disabled>
-																<div class="input-group-prepend">
-																	<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
-																</div>
-															</div>
-														</td>
-														<td class="product-subtotal">
-															$237.00
-														</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="5" class="actions">
-															<div class="d-md-flex flex-wrap justify-content-between">
-																<div class="coupon row">
-																	<div class="col-6 col-md-auto">
-																		<input type="text" name="coupon_code" class="form-control" id="coupon_code" value="" placeholder="Coupon code">
-																	</div>
-																	<div class="col-6 col-md-auto">
-																		<button type="button" class="btn btn-secondary" name="apply_coupon">Apply coupon</button>
-																	</div>
-																</div>
-																<button type="submit" class="btn btn-secondary" name="update_cart" value="Update cart">Update cart</button>
-															</div>
-														</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</form>
-								</div>
-								<div class="col-lg-4">
-									<div class="cart-totals">
-
-										<h3>Cart totals</h3>
-
-										<table cellspacing="0" class="table shop-table">
-											<tbody>
-												<tr class="cart-subtotal">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<form class="cart-form" action="cart.html" method="post">
+									<div class="table-responsive">
+										<table class="table shop-table" cellspacing="0">
+											<thead>
+												<tr>
+													<th>Image</th>
+													<th>Product</th>
+													<th>Price</th>
+													<th>Quantity</th>
 													<th>Subtotal</th>
-													<td>$237.00</td>
 												</tr>
-												<tr class="shipping">
-													<td colspan="2">
-														<p class="text-uppercase mb-1">Shipping</p>
-														<div class="shipping-method">
-															<div class="form-check">
-																<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_free" checked>
-																<label class="form-check-label" for="shipping_method_free">Free Shipping</label>
+											</thead>
+											<tbody>
+												<tr class="cart-item">
+													<td class="product-thumbnail">
+														<a href="product.html">
+															<img width="100" height="100" src="./images/shop/featured_product1.png" alt="Causal Crossbody Bags" class="img-fluid">
+														</a>
+													</td>
+													<td class="product-name">
+														<a href="product.html">Causal Crossbody Bags</a>
+														<br />
+														<a href="#" class="product-wishlist">Wishlist</a>
+														<a href="#" class="product-delete">Delete</a>
+													</td>
+													<td class="product-price">$79.00</td>
+													<td class="product-quantity">
+														<div class="quantity input-group">
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
 															</div>
-															<div class="form-check">
-																<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_local">
-																<label class="form-check-label" for="shipping_method_local">Local Pickup</label>
-															</div>
-															<div class="form-check">
-																<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_flat">
-																<label class="form-check-label" for="shipping_method_flat">Flat rate: $5.00</label>
+															<input type="number" class="form-control qty" value="1" min="1" disabled>
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
 															</div>
 														</div>
-														<div class="shipping-destination mt-3">
-															<p class="mb-1">Shipping to CA</p>
-															<div class="mb-3">
-																<input type="text" value="" class="form-control" name="shipping_country" id="shipping_country" required="" placeholder="Country / Region">
+													</td>
+													<td class="product-subtotal">
+														$79.00
+													</td>
+												</tr>
+												<tr class="cart-item">
+													<td class="product-thumbnail">
+														<a href="product.html">
+															<img width="100" height="100" src="./images/shop/featured_product2.png" alt="Causal Crossbody Bags" class="img-fluid">
+														</a>
+													</td>
+													<td class="product-name">
+														<a href="product.html">Causal Crossbody Bags</a>
+														<br />
+														<a href="#" class="product-wishlist">Wishlist</a>
+														<a href="#" class="product-delete">Delete</a>
+													</td>
+													<td class="product-price">$79.00</td>
+													<td class="product-quantity">
+														<div class="quantity input-group">
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
 															</div>
-															<div class="mb-3">
-																<input type="text" value="" class="form-control" name="shipping_street" id="shipping_street" required="" placeholder="Street address">
+															<input type="number" class="form-control qty" value="1" min="1" disabled>
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
 															</div>
-															<div class="mb-3">
-																<input type="text" value="" class="form-control" name="shipping_city" id="shipping_city" required="" placeholder="Town / City">
+														</div>
+													</td>
+													<td class="product-subtotal">
+														$79.00
+													</td>
+												</tr>
+												<tr class="cart-item">
+													<td class="product-thumbnail">
+														<a href="product.html">
+															<img width="100" height="100" src="./images/shop/featured_product3.png" alt="Causal Crossbody Bags" class="img-fluid">
+														</a>
+													</td>
+													<td class="product-name">
+														<a href="product.html">Causal Crossbody Bags</a>
+														<br />
+														<a href="#" class="product-wishlist">Wishlist</a>
+														<a href="#" class="product-delete">Delete</a>
+													</td>
+													<td class="product-price">$79.00</td>
+													<td class="product-quantity">
+														<div class="quantity input-group">
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
 															</div>
-															<div class="mb-3">
-																<input type="text" value="" class="form-control" name="shipping_country" id="shipping_country" required="" placeholder="Postal Code">
+															<input type="number" class="form-control qty" value="1" min="1" disabled>
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
 															</div>
-															<button type="button" class="btn btn-secondary" name="update_totals">Update Totals</button>
+														</div>
+													</td>
+													<td class="product-subtotal">
+														$237.00
+													</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="5" class="actions">
+														<div class="d-md-flex flex-wrap justify-content-between">
+															<div class="coupon row">
+																<div class="col-6 col-md-auto">
+																	<input type="text" name="coupon_code" class="form-control" id="coupon_code" value="" placeholder="Coupon code">
+																</div>
+																<div class="col-6 col-md-auto">
+																	<button type="button" class="btn btn-secondary" name="apply_coupon">Apply coupon</button>
+																</div>
+															</div>
+															<button type="submit" class="btn btn-secondary" name="update_cart" value="Update cart">Update cart</button>
 														</div>
 													</td>
 												</tr>
-												<tr class="order-total">
-													<th>Total</th>
-													<td>$237.00</td>
-												</tr>
-											</tbody>
+											</tfoot>
 										</table>
-										<a href="checkout.html" class="btn btn-primary">Proceed to checkout</a>
 									</div>
+								</form>
+							</div>
+							<div class="col-lg-4">
+								<div class="cart-totals">
+									<h3>Cart totals</h3>
+									<table cellspacing="0" class="table shop-table">
+										<tbody>
+											<tr class="cart-subtotal">
+												<th>Subtotal</th>
+												<td>$237.00</td>
+											</tr>
+											<tr class="shipping">
+												<td colspan="2">
+													<p class="text-uppercase mb-1">Shipping</p>
+													<div class="shipping-method">
+														<div class="form-check">
+															<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_free" checked>
+															<label class="form-check-label" for="shipping_method_free">Free Shipping</label>
+														</div>
+														<div class="form-check">
+															<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_local">
+															<label class="form-check-label" for="shipping_method_local">Local Pickup</label>
+														</div>
+														<div class="form-check">
+															<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_flat">
+															<label class="form-check-label" for="shipping_method_flat">Flat rate: $5.00</label>
+														</div>
+													</div>
+													<div class="shipping-destination mt-3">
+														<p class="mb-1">Shipping to CA</p>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_country" id="shipping_country" required="" placeholder="Country / Region">
+														</div>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_street" id="shipping_street" required="" placeholder="Street address">
+														</div>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_city" id="shipping_city" required="" placeholder="Town / City">
+														</div>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_country" id="shipping_country" required="" placeholder="Postal Code">
+														</div>
+														<button type="button" class="btn btn-secondary" name="update_totals">Update Totals</button>
+													</div>
+												</td>
+											</tr>
+											<tr class="order-total">
+												<th>Total</th>
+												<td>$237.00</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="checkout.html" class="btn btn-primary">Proceed to checkout</a>
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 
-				</div><!-- .page-content -->
+				</section><!-- #cart-page-main -->
 
-			</main><!-- #content -->
+			</main><!-- #main -->
 
 			<!-- Footer
 			============================================= -->
@@ -356,9 +356,7 @@
 				<div id="footer-main">
 
 					<div class="container-fluid">
-
 						<div class="row">
-
 							<div class="col-lg-3 col-12">
 								<div class="widget widget-custom-html">
 									<a href="#">
@@ -372,7 +370,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-lg-6 col-12">
 								<div class="row">
 									<div class="col-lg-5 col-12">
@@ -424,7 +421,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-lg-3 col-12 text-lg-end text-start">
 								<div class="widget widget-custom-html">
 									<a href="#">
@@ -440,9 +436,7 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 
 				</div><!-- #footer-main -->
@@ -452,9 +446,7 @@
 				<div id="footer-bottom">
 
 					<div class="container-fluid">
-
 						<div class="d-md-flex justify-content-between align-items-center g-0">
-
 							<div class="widget widget-payment mb-md-0 mb-3">
 								<div class="widget-content">
 									<div class="payments">
@@ -465,7 +457,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="widget widget-social d-flex text-end">
 								<ul class="social-icons d-flex align-items-center justify-content-end">
 									<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
@@ -474,20 +465,14 @@
 								</ul>
 								<p class="copyright body-font theme-color my-1 fs-5">&copy; Copyright 2021</p>
 							</div>
-
 						</div>
-
 					</div>
 
 				</div><!-- #footer-bottom -->
 
-			</footer><!-- #footer --
+			</footer><!-- #footer -->
 
 		</div>
-
-		<!-- Go To Top
-		============================================= -->
-		<div id="gotoTop" class="icon-angle-up"></div>
 
 		<!-- External JavaScripts
 		============================================= -->

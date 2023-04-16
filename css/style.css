@@ -9731,12 +9731,6 @@ textarea.form-control-lg {
   	Top product,member
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
-  	Top Cart
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-  	Top Account
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
 
   	banner.scss
 
@@ -10067,49 +10061,49 @@ textarea.form-control-lg {
 #demo32 #top-bar a:hover {
   font-weight: 700;
 }
-#demo32 #header {
+#demo32 .header {
   position: relative;
   z-index: 10;
 }
-#demo32 #header.yellow-header {
+#demo32 .header.yellow-header {
   background-color: #ccac76;
   z-index: 199;
 }
 @media (min-width: 1200px) {
-  #demo32 #header.yellow-header {
+  #demo32 .header.yellow-header {
     background-color: transparent;
   }
 }
-#demo32 #header.blue-light-header {
+#demo32 .header.blue-light-header {
   background-color: #ebf4f9;
   z-index: 199;
 }
 @media (min-width: 1200px) {
-  #demo32 #header.blue-light-header {
+  #demo32 .header.blue-light-header {
     background-color: transparent;
   }
 }
-#demo32 #header.blue-dark-header {
+#demo32 .header.blue-dark-header {
   background-color: #b1d6f7;
   z-index: 199;
 }
 @media (min-width: 1200px) {
-  #demo32 #header.blue-dark-header {
+  #demo32 .header.blue-dark-header {
     background-color: transparent;
   }
 }
 @media (min-width: 1200px) {
-  #demo32 #header {
+  #demo32 .header {
     margin-bottom: -8.1rem;
   }
 }
-#demo32 #header #header-wrap {
+#demo32 .header #header-wrap {
   padding: 0 3.75vw;
 }
-#demo32 #header .current {
+#demo32 .header .current {
   color: #045586;
 }
-#demo32 #header .current a {
+#demo32 .header .current a {
   color: #045586;
 }
 #demo32 .navbar {
@@ -10159,52 +10153,52 @@ textarea.form-control-lg {
 #demo32 #top-links .nav-item {
   padding: 0 4px;
 }
-#demo32 #header.about {
+#demo32 .header#about-header {
   background-color: #f3be41;
   margin-bottom: -4.5rem;
 }
 @media (min-width: 1200px) {
-  #demo32 #header.about {
+  #demo32 .header#about-header {
     margin-bottom: -12.6rem;
     background-color: transparent;
   }
 }
-#demo32 #header.contact-us {
+#demo32 .header#contact-us-header {
   background-color: #ebafc4;
   margin-bottom: -4.5rem;
 }
 @media (min-width: 1200px) {
-  #demo32 #header.contact-us {
+  #demo32 .header#contact-us-header {
     margin-bottom: -12.6rem;
     background-color: transparent;
   }
 }
-#demo32 #header.error {
+#demo32 .header#error-header {
   background-color: #eebfbe;
 }
 @media (min-width: 1200px) {
-  #demo32 #header.error {
+  #demo32 .header#error-header {
     background-color: transparent;
   }
 }
-#demo32 #header.general {
+#demo32 .header.header-etc {
   background-color: #ebf4f9;
   margin-bottom: -4.5rem;
 }
-#demo32 #header.shop {
+#demo32 .header#shop-header {
   background-color: #ebf4f9;
   margin-bottom: -6.75rem;
 }
 @media (min-width: 1200px) {
-  #demo32 #header.shop {
+  #demo32 .header#shop-header {
     margin-bottom: -9rem;
   }
 }
-#demo32 #header.single-post {
+#demo32 .header#single-post-header {
   background-color: #ebf4f9;
   margin-bottom: 2.25rem;
 }
-#demo32 #header.product-header {
+#demo32 .header.header-product-member {
   background-color: #ebf4f9;
   margin-bottom: 2.25rem;
 }
@@ -10473,7 +10467,7 @@ textarea.form-control-lg {
 }
 #demo32 .product .product-mark-red {
   position: absolute;
-  background-image: url(../../images/icons/mark_bg/mark_red.png);
+  background-image: url("../../images/icons/mark_bg/mark_red.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -10483,7 +10477,7 @@ textarea.form-control-lg {
 }
 #demo32 .product .product-mark-blue {
   position: absolute;
-  background-image: url(../../images/icons/mark_bg/mark_blue.png);
+  background-image: url("../../images/icons/mark_bg/mark_blue.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -10543,7 +10537,6 @@ textarea.form-control-lg {
 }
 #demo32 .product .product-info {
   align-items: center;
-  padding-left: 3rem;
 }
 #demo32 .product .product-info h5, #demo32 .product .product-info .h5 {
   color: #cfe2ed;
@@ -10576,6 +10569,33 @@ textarea.form-control-lg {
 }
 #demo32 .product .top {
   top: 8rem !important;
+}
+#demo32 .product .add-to-cart,
+#demo32 .product .add-to-wishlist {
+  color: #000;
+  font-size: 1.8rem;
+}
+#demo32 .product .add-to-cart:hover,
+#demo32 .product .add-to-wishlist:hover {
+  color: #045586;
+}
+#demo32 .product .onsale {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+  color: #fff;
+  margin-top: -2rem;
+  margin-right: 0.2rem;
+  font-family: "Segoe UI", "Sans Serif";
+}
+#demo32 .product .onsale {
+  background-color: #045586;
 }
 #demo32 .shop-table td, #demo32 .shop-table th {
   padding: 1rem;
@@ -11038,7 +11058,7 @@ textarea.form-control-lg {
   padding-top: 13.3rem;
   padding-bottom: 9.9rem;
 }
-#demo32 .contact-bg {
+#demo32 #contact-bg {
   background-image: url(../../images/pages/contact/contact-bg.png);
   position: relative;
   background-repeat: no-repeat;
@@ -11047,7 +11067,7 @@ textarea.form-control-lg {
   padding-top: 10.2rem;
   padding-bottom: 3.9rem;
 }
-#demo32 .contact p {
+#demo32 #contact p {
   color: #302f2d;
 }
 #demo32 #page-title {
@@ -11108,17 +11128,17 @@ textarea.form-control-lg {
 #demo32 .team-member .member-details {
   padding: 0 0 3rem 3rem;
 }
-#demo32 #single-member-page .team-member {
+#demo32 .team-member {
   padding: 0;
 }
-#demo32 #single-member-page .team-member .member-details {
+#demo32 .team-member .member-details {
   padding: 0 3rem 3rem 3rem;
 }
-#demo32 #single-member-page #member-services .member-service {
+#demo32 #member-services .member-service {
   padding-left: 2.25rem;
   position: relative;
 }
-#demo32 #single-member-page #member-services .member-service::before {
+#demo32 #member-services .member-service::before {
   content: "";
   background-image: url("data:image/svg+xml,%3csvg width='34' height='28' viewBox='0 0 34 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M32.9175 0.669397C32.1147 0.0960544 31.0826 0.210723 30.5092 1.0134L13.6507 22.9151L3.78784 14.4296C3.09974 13.8563 1.95289 13.8563 1.37947 14.5443C0.806054 15.2323 0.806061 16.379 1.49416 16.9523L12.7332 26.5845C13.0772 26.8138 13.4213 27.0432 13.88 27.0432C13.9947 27.0432 13.9947 27.0432 14.1094 27.0432C14.5681 27.0432 15.0269 26.6992 15.2562 26.3552L33.1469 2.96277C33.835 2.38943 33.7203 1.24274 32.9175 0.669397Z' fill='%23045586'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -11130,19 +11150,19 @@ textarea.form-control-lg {
   left: 0;
   top: 0;
 }
-#demo32 #single-member-page #member-services .member-service h3, #demo32 #single-member-page #member-services .member-service .h3 {
+#demo32 #member-services .member-service h3, #demo32 #member-services .member-service .h3 {
   font-family: "Segoe UI", "Sans Serif";
   font-size: 1rem;
   margin-bottom: 1.375rem;
 }
-#demo32 #single-member-page #member-portfolios .member-portfolio {
+#demo32 #member-portfolios .member-portfolio {
   margin-bottom: 1.875rem;
 }
-#demo32 #single-member-page #member-portfolios .member-portfolio img {
+#demo32 #member-portfolios .member-portfolio img {
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
 }
-#demo32 #single-member-page #member-portfolios .member-portfolio h3, #demo32 #single-member-page #member-portfolios .member-portfolio .h3 {
+#demo32 #member-portfolios .member-portfolio h3, #demo32 #member-portfolios .member-portfolio .h3 {
   font-family: "Segoe UI", "Sans Serif";
   font-size: 1rem;
   margin-bottom: 0;
@@ -11196,80 +11216,80 @@ textarea.form-control-lg {
 #demo32 .sidebar .widget {
   margin-bottom: 1.875rem;
 }
-#demo32 .single-product-page .product-thumbnail {
+#demo32 #single-product-page .product-thumbnail {
   position: relative;
 }
-#demo32 .single-product-page .product-thumbnail .product-gallery {
+#demo32 #single-product-page .product-thumbnail .product-gallery {
   position: absolute;
   left: 0;
   top: 1.25rem;
   z-index: 1;
 }
-#demo32 .single-product-page .product-thumbnail .product-gallery li {
+#demo32 #single-product-page .product-thumbnail .product-gallery li {
   border-left: 5px solid transparent;
   margin-bottom: 0.625rem;
   padding-left: 0.75rem;
 }
-#demo32 .single-product-page .product-thumbnail .product-gallery li > a {
+#demo32 #single-product-page .product-thumbnail .product-gallery li > a {
   background-color: #fff;
   display: block;
   width: 5.625rem;
   height: 5.625rem;
   overflow: hidden;
 }
-#demo32 .single-product-page .product-thumbnail .product-gallery li:hover, #demo32 .single-product-page .product-thumbnail .product-gallery li.active {
+#demo32 #single-product-page .product-thumbnail .product-gallery li:hover, #demo32 #single-product-page .product-thumbnail .product-gallery li.active {
   border-color: #045586;
 }
-#demo32 .single-product-page .product-summary {
+#demo32 #single-product-page .product-summary {
   text-align: left;
 }
-#demo32 .single-product-page .product.single-product .onsale {
+#demo32 #single-product-page .product.single-product .onsale {
   top: 0;
   right: 1.875rem;
   bottom: initial;
 }
-#demo32 .single-product-page .product.single-product .product-details {
+#demo32 #single-product-page .product.single-product .product-details {
   padding: 0;
 }
 @media (max-width: 991.98px) {
-  #demo32 .single-product-page .product.single-product .product-details {
+  #demo32 #single-product-page .product.single-product .product-details {
     padding-top: 2.25rem;
   }
 }
-#demo32 .single-product-page .product.single-product .product-title {
+#demo32 #single-product-page .product.single-product .product-title {
   color: #7d7b78;
   font-size: 2.5rem;
   font-weight: 700;
 }
-#demo32 .single-product-page .product.single-product .product-rating {
+#demo32 #single-product-page .product.single-product .product-rating {
   margin-top: 0;
   display: inline-block;
 }
-#demo32 .single-product-page .product.single-product .product-rating i {
+#demo32 #single-product-page .product.single-product .product-rating i {
   color: #045586;
 }
-#demo32 .single-product-page .product.single-product .product-price {
+#demo32 #single-product-page .product.single-product .product-price {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   justify-content: flex-start;
 }
-#demo32 .single-product-page .product.single-product .product-meta span {
+#demo32 #single-product-page .product.single-product .product-meta span {
   display: block;
 }
-#demo32 .single-product-page .product.single-product .product-meta span a {
+#demo32 #single-product-page .product.single-product .product-meta span a {
   font-weight: 600;
 }
-#demo32 .single-product-page .product.single-product form.cart {
+#demo32 #single-product-page .product.single-product form.cart {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-#demo32 .single-product-page .product.single-product form.cart input[type=submit] {
+#demo32 #single-product-page .product.single-product form.cart input[type=submit] {
   height: 3rem;
   line-height: 3rem;
   padding: 0 0.8rem;
 }
-#demo32 .single-product-page .product-more-info .tab-content {
+#demo32 #single-product-page .product-more-info .tab-content {
   margin-top: 1.5rem;
 }
 #demo32 #cart-page .cart-form .shop-table tfoot td {
@@ -11348,7 +11368,7 @@ textarea.form-control-lg {
   padding: 2.5rem 0;
 }
 #demo32 #checkout-page .order-details .shop-table td, #demo32 #checkout-page .order-details .shop-table th {
-  border-color: #fff;
+  border-color: #eaeaea;
   border-bottom-width: 1px;
   padding: 1rem 0;
   vertical-align: middle;
@@ -11477,7 +11497,7 @@ textarea.form-control-lg {
   appearance: none;
   background-image: none;
   border: 1px solid #dcdcdc;
-  border-radius: 3px;
+  border-radius: 50%;
   cursor: pointer;
   display: inline-block;
   outline: 0;
