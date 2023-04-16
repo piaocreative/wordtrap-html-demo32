@@ -10467,7 +10467,7 @@ textarea.form-control-lg {
 }
 #demo32 .product .product-mark-red {
   position: absolute;
-  background-image: url("../../images/icons/mark_bg/mark_red.png");
+  background-image: url("../images/icons/mark_bg/mark_red.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -10477,7 +10477,7 @@ textarea.form-control-lg {
 }
 #demo32 .product .product-mark-blue {
   position: absolute;
-  background-image: url("../../images/icons/mark_bg/mark_blue.png");
+  background-image: url("../images/icons/mark_bg/mark_blue.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -10896,7 +10896,7 @@ textarea.form-control-lg {
 #demo32 .bonus-bg {
   background-size: cover;
   position: relative;
-  background-image: url(../../images/pages/home/bonuse-bg.png);
+  background-image: url("../images/pages/home/bonuse-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 20rem;
@@ -10969,7 +10969,7 @@ textarea.form-control-lg {
 }
 #demo32 #new {
   padding-top: 5vw;
-  background-image: url("../../images/pages/home/new-bg.png");
+  background-image: url("../images/pages/home/new-bg.png");
 }
 #demo32 .events .event .event-thumbnail {
   filter: grayscale(100%);
@@ -11051,7 +11051,7 @@ textarea.form-control-lg {
 }
 #demo32 .about-bg {
   position: relative;
-  background-image: url(../../images/pages/about/about-bg.png);
+  background-image: url("../images/pages/about/about-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11059,7 +11059,7 @@ textarea.form-control-lg {
   padding-bottom: 9.9rem;
 }
 #demo32 #contact-bg {
-  background-image: url(../../images/pages/contact/contact-bg.png);
+  background-image: url("../images/pages/contact/contact-bg.png");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11451,7 +11451,7 @@ textarea.form-control-lg {
   display: block;
   width: 0.5rem;
   height: 0.6875rem;
-  background-image: url(../../images/icons/clip/clip-icon.png);
+  background-image: url("../images/icons/clip/clip-icon.png");
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 100;
