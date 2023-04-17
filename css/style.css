@@ -11774,10 +11774,6 @@ textarea.form-control-lg {
 #demo32 section {
   margin: 5vw 0;
 }
-#demo32 .container-fluid, #demo32 .container-xl {
-  padding: 0;
-  margin: 0;
-}
 #demo32 .slider.slider-horizontal {
   width: 100%;
 }
