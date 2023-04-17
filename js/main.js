@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+    // Nav-Brand
+    document.getElementById('logo1').addEventListener('mouseover', function(){
+        document.getElementById('logo1').classList.add('d-none');
+        document.getElementById('logo2').classList.remove('d-none');
+    });
+
+    document.getElementById('logo2').addEventListener('mouseout', function(){
+        document.getElementById('logo2').classList.add('d-none');
+        document.getElementById('logo1').classList.remove('d-none');
+    });
+
+    // Top bag icon
+    document.getElementById('bluebag').addEventListener('mouseover', function(){
+        document.getElementById('bluebag').classList.add('d-none');
+        document.getElementById('whitebag').classList.remove('d-none');
+    });
+
+    document.getElementById('whitebag').addEventListener('mouseout', function(){
+        document.getElementById('whitebag').classList.add('d-none');
+        document.getElementById('bluebag').classList.remove('d-none');
+    });
+
     // Range Slider
 	if ( $( '[data-slider]' ).length ) {
 		$( '[data-slider]' ).slider({});
@@ -46,73 +68,19 @@ $(document).ready(function(){
     $('.banner').on('afterChange', function(event, slick, currentSlide){
       switch(currentSlide) {
         case 2:
-            document.getElementById('logo1').classList.add('d-none');
-            document.getElementById('logo2').classList.remove('d-none');
-            document.getElementById('bluebag').classList.add('d-none');
-            document.getElementById('whitebag').classList.remove('d-none');
-            document.getElementById('redheart').classList.add('text-white');
-            document.getElementById('redheart').classList.remove('text-red');
-            document.getElementById('slick-slide-control00').classList.remove('banner1');
-            document.getElementById('slick-slide-control01').classList.remove('banner1');
-            document.getElementById('slick-slide-control02').classList.remove('banner1');
-            document.getElementById('slick-slide-control00').classList.add('banner2');
-            document.getElementById('slick-slide-control01').classList.add('banner2');
-            document.getElementById('slick-slide-control02').classList.add('banner2');
-            document.getElementById('indicator').querySelector('.slick-active').classList.remove('banner1');
-            document.getElementById('indicator').querySelector('.slick-active').classList.add('banner2');
             document.getElementById('header').classList.remove('yellow-header');
             document.getElementById('header').classList.remove('blue-light-header');
             document.getElementById('header').classList.add('blue-dark-header');
-            document.getElementById('socialsite-facebook').classList.remove('text-primary');
-            document.getElementById('socialsite-facebook').classList.add('text-white');
-            document.getElementById('socialsite-instagram').classList.remove('text-primary');
-            document.getElementById('socialsite-instagram').classList.add('text-white');
             break;
         case 1:
-            document.getElementById('logo1').classList.add('d-none');
-            document.getElementById('logo2').classList.remove('d-none');
-            document.getElementById('bluebag').classList.add('d-none');
-            document.getElementById('whitebag').classList.remove('d-none');
-            document.getElementById('redheart').classList.add('text-white');
-            document.getElementById('redheart').classList.remove('text-red');
-            document.getElementById('slick-slide-control00').classList.remove('banner1');
-            document.getElementById('slick-slide-control01').classList.remove('banner1');
-            document.getElementById('slick-slide-control02').classList.remove('banner1');
-            document.getElementById('slick-slide-control00').classList.add('banner2');
-            document.getElementById('slick-slide-control01').classList.add('banner2');
-            document.getElementById('slick-slide-control02').classList.add('banner2');
-            document.getElementById('indicator').querySelector('.slick-active').classList.remove('banner1');
-            document.getElementById('indicator').querySelector('.slick-active').classList.add('banner2');
             document.getElementById('header').classList.remove('blue-light-header');
             document.getElementById('header').classList.remove('blue-dark-header');
             document.getElementById('header').classList.add('yellow-header');
-            document.getElementById('socialsite-facebook').classList.remove('text-primary');
-            document.getElementById('socialsite-facebook').classList.add('text-white');
-            document.getElementById('socialsite-instagram').classList.remove('text-primary');
-            document.getElementById('socialsite-instagram').classList.add('text-white');
             break;
         default:
-            document.getElementById('logo2').classList.add('d-none');
-            document.getElementById('logo1').classList.remove('d-none');
-            document.getElementById('whitebag').classList.add('d-none');
-            document.getElementById('bluebag').classList.remove('d-none');
-            document.getElementById('redheart').classList.remove('text-white');
-            document.getElementById('redheart').classList.add('text-red');
-            document.getElementById('slick-slide-control00').classList.remove('banner2');
-            document.getElementById('slick-slide-control01').classList.remove('banner2');
-            document.getElementById('slick-slide-control02').classList.remove('banner2');
-            document.getElementById('slick-slide-control00').classList.add('banner1');
-            document.getElementById('slick-slide-control01').classList.add('banner1');
-            document.getElementById('slick-slide-control02').classList.add('banner1');
-            document.getElementById('indicator').querySelector('.slick-active').classList.remove('banner2');
-            document.getElementById('indicator').querySelector('.slick-active').classList.add('banner1');
             document.getElementById('header').classList.remove('yellow-header');
             document.getElementById('header').classList.remove('blue-dark-header');
             document.getElementById('header').classList.add('blue-light-header');
-            document.getElementById('socialsite-facebook').classList.remove('text-white');
-            document.getElementById('socialsite-facebook').classList.add('text-primary');
-            document.getElementById('socialsite-instagram').classList.remove('text-white');
-            document.getElementById('socialsite-instagram').classList.add('text-primary');
             break;
       }
     });
