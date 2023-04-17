@@ -24,6 +24,7 @@
 			.ads-body-price {
 				display: flex;
 				align-items: center;
+				color: white;
 				padding-right: 1.5rem;
 				font-size: 8rem;
 				font-family: $headings-font-family;
@@ -32,6 +33,10 @@
 				display: flex;
 				align-items: center;
 				font-size: 1.8rem;
+				color: white;
+				&:hover {
+					color: $theme-color;
+				}
 			};
 			@include media-breakpoint-up (sm) {
 				.ads-body-price {
@@ -50,6 +55,10 @@
 		};
 		.ads-body-button {
 			font-size: 1.5rem;
+			color: white;
+			&:hover{
+				color: $light-blue;
+			}
 			@include media-breakpoint-up (sm) {
 				font-size: 0.8rem;
 			};
@@ -62,15 +71,18 @@
 		line-height: 0.8;
 		.ads-body-category {
 			font-size: 1.8rem;
-			color: $theme-color;
+			color: white;
+			&:hover{
+				color: $theme-color;
+			}
 			@include media-breakpoint-up (sm) {
 				font-size: 0.75rem;
 			}
 		};
 		.ads-body-price {
 			font-size: 5rem;
-			color: white;
 			font-family: $headings-font-family;
+			color: white;
 			@include media-breakpoint-up (sm) {
 				font-size: 2.5rem;
 			}
@@ -79,8 +91,11 @@
 			}
 		};
 		.ads-body-button {
+			color: white;
+			&:hover {
+				color: $light-blue;
+			}
 			font-family: $headings-font-family;
-			color: $light-blue;
 		};
 		&.center {
 			left: 50%;
@@ -194,6 +209,7 @@
 #new {
 	padding-top: 5vw;
 	background-image: url('../images/pages/home/new-bg.png');
+	padding-bottom: 5vw;
 }
 
 .events {

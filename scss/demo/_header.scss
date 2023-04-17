@@ -108,11 +108,11 @@
 			padding: 0 16px;
 		};
 	};
-	#redheart.text-red {
-		color: $light-purple;
-	}
 	#redheart{
 		color: $light-purple;
+		&:hover {
+			color: white;
+		}
 	}
 	.addbag {
 		width: 1.3rem;
@@ -166,7 +166,7 @@
 	}
 }
 /* ----------------------------------------------------------------
-	Top wishlist,team,faqs
+	Top wishlist,team,faqs,blog,cart,checkout
 -----------------------------------------------------------------*/
 
 .header.header-etc {

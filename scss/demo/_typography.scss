@@ -15,19 +15,7 @@ dl, dt, dd, ol, ul, li {
 }
 
 ::selection {
-	background: $theme-color;
-	color: $white;
-	text-shadow: none;
-}
-
-::-moz-selection {
-	background: $theme-color; /* Firefox */
-	color: $white;
-	text-shadow: none;
-}
-
-::-webkit-selection {
-	background: $theme-color; /* Safari */
+	background-color: $theme-color;
 	color: $white;
 	text-shadow: none;
 }
@@ -57,14 +45,14 @@ html {
     @media only screen and (max-width: 991) {
         font-size: 85%;
     }
-  
+
     /*--------------------------------------------------------------
     ## Mobile
     --------------------------------------------------------------*/
     @media only screen and (max-width: 767px) {
         font-size: 80%;
     }
-    
+
     /*--------------------------------------------------------------
     ## Mini
     --------------------------------------------------------------*/
