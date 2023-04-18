@@ -27,10 +27,13 @@
 			padding: 0.6rem 0.8rem;
 			font-size: 1.2rem;
 			border-radius: 0.5rem;
-}
+		}
 	};
 	.banner-head {
 		font-size: clamp(20px,5vw,5vw);
+		@include media-breakpoint-up (xl) {
+			font-size: 5rem;
+		}
 	};
 	.banner1-text {
 		position: absolute;

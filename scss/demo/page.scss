@@ -308,6 +308,19 @@
 	background-position: center;
   	padding-top: 13.3rem;
 	padding-bottom: 9.9rem;
+	.sub-title {
+		font-weight: 500;
+		background-color: $light-purple;
+		font-size: 8px;
+		color: white;
+		padding: 0.2rem 0.4rem;
+		border-radius: 0.2rem;
+		@include media-breakpoint-up(md) {
+			padding: 0.6rem 0.8rem;
+			font-size: 1.2rem;
+			border-radius: 0.5rem;
+		}
+	}
 };
 
 /* Contact
