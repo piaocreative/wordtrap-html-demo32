@@ -136,7 +136,7 @@ $input-btn-font-size-lg:             1.5rem;
 
 $input-btn-line-height:              1;
 
-$input-btn-focus-width:              10px;
+$input-btn-focus-width:              1px;
 $input-focus-border-color:           $light-blue;
 
 // Navbar
@@ -152,6 +152,7 @@ $navbar-toggler-padding-x:           0;
 $navbar-light-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#343434' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 $navbar-light-toggler-border-color:  transparent;
 $navbar-toggler-border-radius:       0;
+$navbar-toggler-border-width:        1px;
 
 // Navs
 $nav-link-padding-y:                 0.9rem;

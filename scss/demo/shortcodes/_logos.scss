@@ -15,22 +15,17 @@
 	.logo-item {
 		border: 1px solid #eaeaea;
 		border-radius: .3125rem;
-		max-width: 10.625rem;
+		max-width: 10rem;
 		height: 6.25rem;
 		display: flex!important;
 		justify-content: center;
 		align-items: center;
 	};
-	.slick-active {
-		.logo-item {
-			img {
-				padding: 10px 30px;
-			};
-		};
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	};
+	@include media-breakpoint-up (xxl) {
+		.slick-slide.slick-active {
+			width: 219px!important;
+		}
+	}
 };
 
 

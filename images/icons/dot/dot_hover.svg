@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        opacity: 0.46;
-      }
-    </style>
-  </defs>
-  <circle id="Эллипс_7_копия_2" data-name="Эллипс 7 копия 2" class="cls-1" cx="7.5" cy="7.5" r="7.5"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><defs><style>.cls-1 {fill: #c7dae4;}</style></defs><circle id="Эллипс_7" data-name="Эллипс 7" class="cls-1" cx="7.5" cy="7.5" r="7.5"/></svg>
