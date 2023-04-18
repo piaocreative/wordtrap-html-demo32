@@ -105,7 +105,8 @@
 	.nav-item {
 		padding-right: 10px;
 		@include media-breakpoint-up(xl) {
-			padding: 0 16px;
+			padding-left: 4px;
+			padding-right: 4px;
 		};
 	};
 	#redheart{
