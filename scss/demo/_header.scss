@@ -41,7 +41,7 @@
 		margin-bottom: -1.8*$header-height;
 	};
 	#header-wrap {
-		padding: 0 3.75vw;
+		padding: 0 2.6vw;
 	};
 	.current {
 		a {
@@ -52,28 +52,17 @@
 };
 
 /* ----------------------------------------------------------------
-	Navbar
------------------------------------------------------------------*/
-
-.navbar {
-	padding: 20px 0;
-	@include media-breakpoint-up (xl) {
-		padding: 2.2rem 0;
-	}
-}
-
-/* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
 
 .navbar-brand {
 	img {
-		width: 3.5rem;
+		width: 4.5rem;
 	};
 	@include media-breakpoint-up (xl) {
 		img {
 			padding-bottom: 12px;
-			width: 5rem;
+			width: 7rem;
 		};
 	};
 };
@@ -102,22 +91,28 @@
 -----------------------------------------------------------------*/
 
 #top-btns {
-	.nav-item {
-		padding-right: 10px;
-		@include media-breakpoint-up(xl) {
-			padding-left: 4px;
-			padding-right: 4px;
+	.navbar-nav {
+		.nav-item {
+			padding-right: 10px;
+			#redheart{
+				color: white;
+				padding: 0 1.6vw;
+				font-size: 1.4rem;
+				&:hover {
+					color: $light-purple;
+				};
+			};
+			@include media-breakpoint-up(xl) {
+				padding: 0;
+			};
+			.nav-link {
+				padding: 0!important;
+				.addbag {
+					width: 1.3rem;
+				};
+			}
 		};
-	};
-	#redheart{
-		color: $light-purple;
-		&:hover {
-			color: white;
-		}
 	}
-	.addbag {
-		width: 1.3rem;
-	};
 };
 
 /* ----------------------------------------------------------------
@@ -125,8 +120,13 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	.nav-item {
-		padding: 0 4px;
+	.navbar-nav {
+		padding-left: 2vw;
+		.nav-item {
+			.nav-link {
+				font-size: 12.8px;
+			};
+		};
 	};
 };
 
@@ -138,7 +138,7 @@
 	background-color: #f3be41;
 	margin-bottom: -$header-height;
 	@include media-breakpoint-up (xl) {
-		margin-bottom: -2.8*$header-height;
+		margin-bottom: -3*$header-height;
 		background-color: transparent;
 	}
 }
@@ -151,7 +151,7 @@
 	background-color: #ebafc4;
 	margin-bottom: -$header-height;
 	@include media-breakpoint-up (xl) {
-		margin-bottom: -2.8*$header-height;
+		margin-bottom: -3*$header-height;
 		background-color: transparent;
 	}
 }

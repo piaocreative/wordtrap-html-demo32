@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="83" height="8" viewBox="0 0 83 8"><defs><style>.cls-1 {fill: #59a4d1;}</style></defs><rect id="Прямоугольник_скругл._углы_525" data-name="Прямоугольник, скругл. углы 525" class="cls-1" width="83" height="8" rx="4" ry="4"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="8" viewBox="0 0 83 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_скругл._углы_525" data-name="Прямоугольник, скругл. углы 525" class="cls-1" width="83" height="8" rx="4" ry="4"/>
+</svg>

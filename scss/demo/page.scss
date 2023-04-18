@@ -15,8 +15,8 @@
 	.ads-body {
 		position: absolute;
 		left: 10%;
-		top: 5%;
-		height: 85%;
+		top: 0%;
+		height: 95%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -26,7 +26,7 @@
 				align-items: center;
 				color: white;
 				padding-right: 1.5rem;
-				font-size: 8rem;
+				font-size: 7rem;
 				font-family: $headings-font-family;
 			};
 			.ads-body-category {
@@ -38,29 +38,31 @@
 					color: $theme-color;
 				}
 			};
-			@include media-breakpoint-up (sm) {
+			@include media-breakpoint-up (md) {
 				.ads-body-price {
-					font-size: 2.5rem;
+					font-size: 3.5rem;
 					padding-right: 0.5vw;
 				};
 				.ads-body-category {
-					font-size: 0.75rem;
+					padding-left: 0.5rem;
+					font-size: 1rem;
 				};
 			};
-			@include media-breakpoint-up (md) {
+			@include media-breakpoint-up (lg) {
 				.ads-body-price {
-					font-size: 3.75rem;
+					font-size: 5rem;
 				};
 			};
 		};
 		.ads-body-button {
 			font-size: 1.5rem;
+			font-weight: 500;
 			color: white;
 			&:hover{
 				color: $light-blue;
 			}
-			@include media-breakpoint-up (sm) {
-				font-size: 0.8rem;
+			@include media-breakpoint-up (md) {
+				font-size: 14.5px;
 			};
 		};
 	};
@@ -72,22 +74,25 @@
 		.ads-body-category {
 			font-size: 1.8rem;
 			color: white;
+			margin: 0;
 			&:hover{
 				color: $theme-color;
 			}
-			@include media-breakpoint-up (sm) {
-				font-size: 0.75rem;
+			@include media-breakpoint-up (md) {
+				font-size: 0.9vw;
+				line-height: 1.5;
 			}
 		};
 		.ads-body-price {
 			font-size: 5rem;
 			font-family: $headings-font-family;
 			color: white;
-			@include media-breakpoint-up (sm) {
+			margin: 0;
+			@include media-breakpoint-up (md) {
 				font-size: 2.5rem;
 			}
 			@include media-breakpoint-up (md) {
-				font-size: 4rem;
+				font-size: 4.2vw;
 			}
 		};
 		.ads-body-button {
@@ -102,24 +107,20 @@
 			top: 50%;
 			.ads-body-category {
 				font-size: 0.75rem;
-				@include media-breakpoint-up (sm) {
+				padding: 0;
+				@include media-breakpoint-up (md) {
 					font-size: 1rem;
+					padding: 0.8vw 0;
 				}
 			};
 			.ads-body-price {
 				font-size: 2.5rem;
-				@include media-breakpoint-up (sm) {
+				@include media-breakpoint-up (md) {
 					font-size: 4rem;
 				}
 				@include media-breakpoint-up (md) {
 					font-size: 5rem;
 				}
-			};
-			.ads-body-button {
-				font-size: 0.8rem;
-				@include media-breakpoint-up (sm) {
-					font-size: 1.2rem;
-				};
 			};
 		};
 	};
@@ -149,7 +150,7 @@
 		};
 
 		p {
-			font-size: 1.125rem;
+			font-size: 1rem;
 			line-height: 1.75;
 		};
 
@@ -176,31 +177,32 @@
 			font-size: 0.5rem;
 		}
 		@include media-breakpoint-up (sm) {
-			h3 {
-				font-size: 1.2rem;
-			}
 			h4 {
 				font-size: 1rem;
-			}
-			h5 {
-				font-size: 0.75rem;
 			}
 			p {
 				font-size: 0.5rem;
 			}
 		}
 		@include media-breakpoint-up (lg) {
-			h3 {
-				font-size: 1.8rem;
+			.price-bg {
+				padding: 0.3rem 0.75rem;
 			}
-			h4 {
+			h3 {
 				font-size: 1.5rem;
+				line-height: 1;
 			}
 			h5 {
-				font-size: 1rem;
+				font-size: 14px;
+				line-height: 1;
 			}
 			p {
 				font-size: 0.75rem;
+			}
+		}
+		@include media-breakpoint-up (xl) {
+			p {
+				font-size: 1rem;
 			}
 		}
 	}

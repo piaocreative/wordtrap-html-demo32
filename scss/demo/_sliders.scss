@@ -14,3 +14,35 @@
 /* ----------------------------------------------------------------
 	Add here styles for all sliders. Thanks!
 -----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Bootstarp Slider
+-----------------------------------------------------------------*/
+
+.slider.slider-horizontal {
+	width: 100%;
+
+	.slider-track {
+		height: 5px;
+	}
+}
+
+.slider-track {
+	background-color: #f5f5f5;;
+	background-image: none;
+
+	@include box-shadow(none);
+}
+
+.slider-selection,
+.slider-handle {
+	background-color: $theme-color;
+	background-image: none;
+
+	@include box-shadow(none);
+}
+
+.slider-handle {
+	width: 14px;
+	height: 14px;
+}
