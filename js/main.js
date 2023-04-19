@@ -12,14 +12,14 @@ $(document).ready(function(){
     });
 
     // Top bag icon
-    document.getElementById('bluebag').addEventListener('mouseover', function(){
-        document.getElementById('bluebag').classList.add('d-none');
-        document.getElementById('whitebag').classList.remove('d-none');
-    });
-
-    document.getElementById('whitebag').addEventListener('mouseout', function(){
+    document.getElementById('whitebag').addEventListener('mouseover', function(){
         document.getElementById('whitebag').classList.add('d-none');
         document.getElementById('bluebag').classList.remove('d-none');
+    });
+
+    document.getElementById('bluebag').addEventListener('mouseout', function(){
+        document.getElementById('bluebag').classList.add('d-none');
+        document.getElementById('whitebag').classList.remove('d-none');
     });
 
     // Range Slider
