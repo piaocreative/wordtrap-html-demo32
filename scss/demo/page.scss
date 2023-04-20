@@ -144,65 +144,77 @@
 		@include media-breakpoint-down(lg) {
 			width: 100%;
 		};
-
-		h2 {
-			font-size: 3rem;
-		};
-
-		p {
-			font-size: 1rem;
-			line-height: 1.75;
-		};
+		.title {
+			h2 {
+				font-size: 3rem;
+			};
+			p {
+				font-size: 20px;
+				padding: 18px 0;
+			}
+		}
 
 		button {
 			background-color: $light-purple;
-			padding: 1.2rem 2.5rem;
+			padding: 1.5rem 2.5rem;
 			margin-top: 1.4rem;
+			p {
+				font-size: 16px;
+				font-family: $headings-font-family;
+			};
 		};
 	};
 };
 
 #best-seller {
-	.product {
-		h3 {
-			font-size: 1rem;
-		}
-		h4 {
-			font-size: 0.75rem;
-		}
-		h5 {
-			font-size: 0.5rem;
-		}
+	.heading-block {
 		p {
-			font-size: 0.5rem;
+			font-size: 14px;
+			font-family: $headings-font-family;
 		}
-		@include media-breakpoint-up (sm) {
-			h4 {
+	}
+	.product {
+		.product-categories {
+			h3 {
 				font-size: 1rem;
+			}
+			h4 {
+				font-size: 0.75rem;
+			}
+			h5 {
+				font-size: 0.5rem;
 			}
 			p {
 				font-size: 0.5rem;
 			}
-		}
-		@include media-breakpoint-up (lg) {
-			.price-bg {
-				padding: 0.3rem 0.75rem;
+			@include media-breakpoint-up (sm) {
+				h4 {
+					font-size: 1rem;
+				}
+				p {
+					font-size: 0.5rem;
+				}
 			}
-			h3 {
-				font-size: 1.5rem;
-				line-height: 1;
+			@include media-breakpoint-up (lg) {
+				.price-bg {
+					padding: 0.3rem 0.75rem;
+				}
+				h3 {
+					font-size: 1.5rem;
+					line-height: 1;
+				}
+				h5 {
+					font-size: 14px;
+					line-height: 1;
+				}
+				p {
+					font-size: 0.75rem;
+				}
 			}
-			h5 {
-				font-size: 14px;
-				line-height: 1;
-			}
-			p {
-				font-size: 0.75rem;
-			}
-		}
-		@include media-breakpoint-up (xl) {
-			p {
-				font-size: 1rem;
+			@include media-breakpoint-up (xl) {
+				p {
+					font-size: 1rem;
+				}
 			}
 		}
 	}
@@ -318,10 +330,15 @@
 		padding: 0.2rem 0.4rem;
 		border-radius: 0.2rem;
 		@include media-breakpoint-up(md) {
-			padding: 0.6rem 0.8rem;
-			font-size: 1.2rem;
+			padding: 0.3rem 0.8rem;
+			font-size: 27px;
 			border-radius: 0.5rem;
 		}
+	}
+	.title {
+		line-height: 0.5!important;
+		padding: 15px 0;
+		margin-bottom: 2.5rem!important;
 	}
 };
 
@@ -339,8 +356,12 @@
 };
 
 #contact {
+	h5 {
+		font-size: 16px;
+	}
 	p {
-		color: $heading-color;
+		font-size: 17px;
+		color: $body-color;
 	};
 };
 
@@ -360,13 +381,14 @@
 	.title {
 		display: block;
 		font-family: $headings-font-family;
-		font-size: 5rem;
+		font-size: 4.5rem;
 		line-height: 1;
-		margin-bottom: 3.5rem;
+		margin-bottom: 2.5rem;
+		color: white;
 	}
 
 	p {
-		font-size: 1.25rem;
+		font-size: 19px;
 		color: #2f363a;
 	}
 }

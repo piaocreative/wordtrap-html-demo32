@@ -16,34 +16,52 @@
 
 #footer {
 	background-color: #ebf4f9;
-}
-
-#footer-main {
-	padding-top: 3.7rem;
-	margin: 0 7rem;
-	font-size: 0.685rem;
-	padding-bottom: 4.2rem;
-	color: $theme-color !important;
-
-	@include media-breakpoint-down(xl) {
-		margin: 0;
+	ul {
+		li {
+			a {
+				line-height: 2;
+			}
+		}
 	}
 
-	.address p {
-		color: $light-blue!important;
+	#footer-main {
+		padding-top: 3.7rem;
+		margin: 0 7rem;
+		font-size: 0.685rem;
+		padding-bottom: 4.2rem;
+		color: $theme-color !important;
+		.address p {
+			font-size: 15px!important;
+			color: $light-blue!important;
+		}
+		.widget {
+			padding-left: 40px;
+		}
+		.widget-custom-html {
+			padding: 0!important;
+			p {
+				font-size: 14px;
+			}
+			h2 {
+				letter-spacing: 1px;
+			}
+		}
+
+		@include media-breakpoint-down(xl) {
+			margin: 0;
+		}
 	}
 
-}
+	#footer-bottom {
+		background-color: white;
+		padding-top: 2.375rem;
+		padding-bottom: 2.375rem;
+		padding-left: 7rem;
+		padding-right: 7rem;
 
-#footer-bottom {
-	background-color: white;
-	padding-top: 2.375rem;
-	padding-bottom: 2.375rem;
-	padding-left: 7rem;
-	padding-right: 7rem;
-
-	@include media-breakpoint-down(xl) {
-		padding-left: 0;
-		padding-right: 0;
+		@include media-breakpoint-down(xl) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 }

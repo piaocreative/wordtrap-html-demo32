@@ -37,6 +37,9 @@ textarea {
 	.btn {
 		background-color: $light-purple;
         padding: $spacer $spacer * 4;
+		font-weight: 100;
+		font-family: sans-serif;
+		font-size: 14px;
 
         @include media-breakpoint-down(sm) {
             width: 100%;
@@ -123,6 +126,13 @@ input[type=radio],
 .form-check-input:checked[type=radio],
 .form-check-input[type=checkbox] {
 	background-image: none;
+}
+
+
+// Label
+.form-label {
+	font-size: 13px;
+	color: $body-color;
 }
 
 

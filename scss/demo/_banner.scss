@@ -24,8 +24,8 @@
 		padding: 0.2rem 0.4rem;
 		border-radius: 0.2rem;
 		@include media-breakpoint-up(md) {
-			padding: 0.6rem 0.9rem;
-			font-size: 21px;
+			padding: 0.4rem 0.9rem;
+			font-size: 27px;
 			border-radius: 0.5rem;
 		}
 	};
@@ -33,6 +33,8 @@
 		font-size: clamp(20px,5vw,5vw);
 		@include media-breakpoint-up (xl) {
 			font-size: 6.3vw;
+			line-height: 1.1;
+			padding: 35px 0;
 		}
 	};
 	.banner1-text {
@@ -48,7 +50,7 @@
 		.banner-button {
 			top: 20%;
 			@include media-breakpoint-up (md) {
-				top: 27%;
+				top: 24%;
 			}
 		}
 		.banner-head {
@@ -71,8 +73,9 @@
 			font-size: 8px;
 			padding: 0.1rem 0.25rem 0.1rem 0.25rem;
 			@include media-breakpoint-up (md) {
-				font-size: 1.5rem;
-				padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+				font-size: 26px;
+				padding: 0.3rem 0.8rem;
+				margin-bottom: 10px;
 			}
 		}
 	}

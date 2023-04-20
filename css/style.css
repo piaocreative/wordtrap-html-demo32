@@ -1899,8 +1899,8 @@ progress {
 }
 
 .col-form-label {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1;
@@ -1932,7 +1932,7 @@ progress {
 .form-control {
   display: block;
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -1954,7 +1954,7 @@ progress {
 .form-control:focus {
   color: #302f2d;
   background-color: #fff;
-  border-color: #59a4d1;
+  border-color: #82aac3;
   outline: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 1px #045586;
 }
@@ -1970,8 +1970,8 @@ progress {
   opacity: 1;
 }
 .form-control::file-selector-button {
-  padding: 1rem 1.5rem;
-  margin: -1rem -1.5rem;
+  padding: 0.8rem 1.5rem;
+  margin: -0.8rem -1.5rem;
   margin-inline-end: 1.5rem;
   color: #302f2d;
   background-color: #eaeaea;
@@ -1987,8 +1987,8 @@ progress {
   background-color: #dedede;
 }
 .form-control::-webkit-file-upload-button {
-  padding: 1rem 1.5rem;
-  margin: -1rem -1.5rem;
+  padding: 0.8rem 1.5rem;
+  margin: -0.8rem -1.5rem;
   margin-inline-end: 1.5rem;
   color: #302f2d;
   background-color: #eaeaea;
@@ -2007,7 +2007,7 @@ progress {
 .form-control-plaintext {
   display: block;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   margin-bottom: 0;
   line-height: 1;
   color: #7d7b78;
@@ -2060,7 +2060,7 @@ progress {
 }
 
 textarea.form-control {
-  min-height: calc(1em + 2rem);
+  min-height: calc(1em + 1.6rem);
 }
 textarea.form-control-sm {
   min-height: calc(1em + 1rem);
@@ -2072,7 +2072,7 @@ textarea.form-control-lg {
 .form-control-color {
   max-width: 3rem;
   height: auto;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
   cursor: pointer;
@@ -2089,7 +2089,7 @@ textarea.form-control-lg {
 .form-select {
   display: block;
   width: 100%;
-  padding: 1rem 4.5rem 1rem 1.5rem;
+  padding: 0.8rem 4.5rem 0.8rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -2105,7 +2105,7 @@ textarea.form-control-lg {
   appearance: none;
 }
 .form-select:focus {
-  border-color: #59a4d1;
+  border-color: #82aac3;
   outline: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 1px #045586;
 }
@@ -2174,7 +2174,7 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #59a4d1;
+  border-color: #82aac3;
   outline: 0;
   box-shadow: 0 0 0 1px #045586;
 }
@@ -2214,7 +2214,7 @@ textarea.form-control-lg {
   transition: background-position 0.15s ease-in-out;
 }
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2359a4d1'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2382aac3'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
@@ -2396,7 +2396,7 @@ textarea.form-control-lg {
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -2486,11 +2486,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:valid, .form-control.is-valid {
   border-color: #59a4d1;
-  padding-right: calc(1em + 2rem);
+  padding-right: calc(1em + 1.6rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2359a4d1' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.25em + 0.5rem) center;
-  background-size: calc(0.5em + 1rem) calc(0.5em + 1rem);
+  background-position: right calc(0.25em + 0.4rem) center;
+  background-size: calc(0.5em + 0.8rem) calc(0.5em + 0.8rem);
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #59a4d1;
@@ -2498,8 +2498,8 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
-  padding-right: calc(1em + 2rem);
-  background-position: top calc(0.25em + 0.5rem) right calc(0.25em + 0.5rem);
+  padding-right: calc(1em + 1.6rem);
+  background-position: top calc(0.25em + 0.4rem) right calc(0.25em + 0.4rem);
 }
 
 .was-validated .form-select:valid, .form-select.is-valid {
@@ -2509,7 +2509,7 @@ textarea.form-control-lg {
   padding-right: 8.25rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23cccccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2359a4d1' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-position: right 1.5rem center, center right 4.5rem;
-  background-size: 16px 12px, calc(0.5em + 1rem) calc(0.5em + 1rem);
+  background-size: 16px 12px, calc(0.5em + 0.8rem) calc(0.5em + 0.8rem);
 }
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus {
   border-color: #59a4d1;
@@ -2575,11 +2575,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
-  padding-right: calc(1em + 2rem);
+  padding-right: calc(1em + 1.6rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.25em + 0.5rem) center;
-  background-size: calc(0.5em + 1rem) calc(0.5em + 1rem);
+  background-position: right calc(0.25em + 0.4rem) center;
+  background-size: calc(0.5em + 0.8rem) calc(0.5em + 0.8rem);
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #dc3545;
@@ -2587,8 +2587,8 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
-  padding-right: calc(1em + 2rem);
-  background-position: top calc(0.25em + 0.5rem) right calc(0.25em + 0.5rem);
+  padding-right: calc(1em + 1.6rem);
+  background-position: top calc(0.25em + 0.4rem) right calc(0.25em + 0.4rem);
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
@@ -2598,7 +2598,7 @@ textarea.form-control-lg {
   padding-right: 8.25rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23cccccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-position: right 1.5rem center, center right 4.5rem;
-  background-size: 16px 12px, calc(0.5em + 1rem) calc(0.5em + 1rem);
+  background-size: 16px 12px, calc(0.5em + 0.8rem) calc(0.5em + 0.8rem);
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
   border-color: #dc3545;
@@ -10211,8 +10211,8 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   #demo32 #banner .banner-button {
-    padding: 0.6rem 0.9rem;
-    font-size: 21px;
+    padding: 0.4rem 0.9rem;
+    font-size: 27px;
     border-radius: 0.5rem;
   }
 }
@@ -10222,6 +10222,8 @@ textarea.form-control-lg {
 @media (min-width: 1200px) {
   #demo32 #banner .banner-head {
     font-size: 6.3vw;
+    line-height: 1.1;
+    padding: 35px 0;
   }
 }
 #demo32 #banner .banner1-text {
@@ -10240,7 +10242,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   #demo32 #banner .banner2-text .banner-button {
-    top: 27%;
+    top: 24%;
   }
 }
 #demo32 #banner .banner2-text .banner-head {
@@ -10267,8 +10269,9 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   #demo32 #banner .banner3-text .banner-button {
-    font-size: 1.5rem;
-    padding: 0.3rem 0.8rem 0.4rem 0.8rem;
+    font-size: 26px;
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 10px;
   }
 }
 #demo32 #banner #indicator {
@@ -10531,9 +10534,15 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  top: 0.6rem;
+  top: 0.8rem;
+  left: 0.3rem;
   z-index: 100;
-  padding: 0.7rem 1rem;
+  padding: 0.9rem 1rem;
+}
+#demo32 .product .product-mark-red p {
+  font-size: 17px;
+  font-family: "Fredoka One", cursives;
+  font-weight: 400;
 }
 #demo32 .product .product-mark-blue {
   position: absolute;
@@ -10543,7 +10552,7 @@ textarea.form-control-lg {
   background-position: center;
   top: 0.6rem;
   z-index: 100;
-  padding: 0.7rem 1.2rem;
+  padding: 0.9rem 1.2rem;
 }
 #demo32 .product .add-to-wishlist {
   position: absolute;
@@ -10816,22 +10825,38 @@ textarea.form-control-lg {
 #demo32 #footer {
   background-color: #ebf4f9;
 }
-#demo32 #footer-main {
+#demo32 #footer ul li a {
+  line-height: 2;
+}
+#demo32 #footer #footer-main {
   padding-top: 3.7rem;
   margin: 0 7rem;
   font-size: 0.685rem;
   padding-bottom: 4.2rem;
   color: #045586 !important;
 }
+#demo32 #footer #footer-main .address p {
+  font-size: 15px !important;
+  color: #59a4d1 !important;
+}
+#demo32 #footer #footer-main .widget {
+  padding-left: 40px;
+}
+#demo32 #footer #footer-main .widget-custom-html {
+  padding: 0 !important;
+}
+#demo32 #footer #footer-main .widget-custom-html p {
+  font-size: 14px;
+}
+#demo32 #footer #footer-main .widget-custom-html h2, #demo32 #footer #footer-main .widget-custom-html .h2 {
+  letter-spacing: 1px;
+}
 @media (max-width: 1199.98px) {
-  #demo32 #footer-main {
+  #demo32 #footer #footer-main {
     margin: 0;
   }
 }
-#demo32 #footer-main .address p {
-  color: #59a4d1 !important;
-}
-#demo32 #footer-bottom {
+#demo32 #footer #footer-bottom {
   background-color: white;
   padding-top: 2.375rem;
   padding-bottom: 2.375rem;
@@ -10839,7 +10864,7 @@ textarea.form-control-lg {
   padding-right: 7rem;
 }
 @media (max-width: 1199.98px) {
-  #demo32 #footer-bottom {
+  #demo32 #footer #footer-bottom {
     padding-left: 0;
     padding-right: 0;
   }
@@ -10992,56 +11017,64 @@ textarea.form-control-lg {
     width: 100%;
   }
 }
-#demo32 .bonus-bg .content h2, #demo32 .bonus-bg .content .h2 {
+#demo32 .bonus-bg .content .title h2, #demo32 .bonus-bg .content .title .h2 {
   font-size: 3rem;
 }
-#demo32 .bonus-bg .content p {
-  font-size: 1rem;
-  line-height: 1.75;
+#demo32 .bonus-bg .content .title p {
+  font-size: 20px;
+  padding: 18px 0;
 }
 #demo32 .bonus-bg .content button {
   background-color: #f11656;
-  padding: 1.2rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   margin-top: 1.4rem;
 }
-#demo32 #best-seller .product h3, #demo32 #best-seller .product .h3 {
+#demo32 .bonus-bg .content button p {
+  font-size: 16px;
+  font-family: "Fredoka One", cursives;
+}
+#demo32 #best-seller .heading-block p {
+  font-size: 14px;
+  font-family: "Fredoka One", cursives;
+}
+#demo32 #best-seller .product .product-categories h3, #demo32 #best-seller .product .product-categories .h3 {
   font-size: 1rem;
 }
-#demo32 #best-seller .product h4, #demo32 #best-seller .product .h4 {
+#demo32 #best-seller .product .product-categories h4, #demo32 #best-seller .product .product-categories .h4 {
   font-size: 0.75rem;
 }
-#demo32 #best-seller .product h5, #demo32 #best-seller .product .h5 {
+#demo32 #best-seller .product .product-categories h5, #demo32 #best-seller .product .product-categories .h5 {
   font-size: 0.5rem;
 }
-#demo32 #best-seller .product p {
+#demo32 #best-seller .product .product-categories p {
   font-size: 0.5rem;
 }
 @media (min-width: 576px) {
-  #demo32 #best-seller .product h4, #demo32 #best-seller .product .h4 {
+  #demo32 #best-seller .product .product-categories h4, #demo32 #best-seller .product .product-categories .h4 {
     font-size: 1rem;
   }
-  #demo32 #best-seller .product p {
+  #demo32 #best-seller .product .product-categories p {
     font-size: 0.5rem;
   }
 }
 @media (min-width: 992px) {
-  #demo32 #best-seller .product .price-bg {
+  #demo32 #best-seller .product .product-categories .price-bg {
     padding: 0.3rem 0.75rem;
   }
-  #demo32 #best-seller .product h3, #demo32 #best-seller .product .h3 {
+  #demo32 #best-seller .product .product-categories h3, #demo32 #best-seller .product .product-categories .h3 {
     font-size: 1.5rem;
     line-height: 1;
   }
-  #demo32 #best-seller .product h5, #demo32 #best-seller .product .h5 {
+  #demo32 #best-seller .product .product-categories h5, #demo32 #best-seller .product .product-categories .h5 {
     font-size: 14px;
     line-height: 1;
   }
-  #demo32 #best-seller .product p {
+  #demo32 #best-seller .product .product-categories p {
     font-size: 0.75rem;
   }
 }
 @media (min-width: 1200px) {
-  #demo32 #best-seller .product p {
+  #demo32 #best-seller .product .product-categories p {
     font-size: 1rem;
   }
 }
@@ -11147,10 +11180,15 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   #demo32 .about-bg .sub-title {
-    padding: 0.6rem 0.8rem;
-    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 27px;
     border-radius: 0.5rem;
   }
+}
+#demo32 .about-bg .title {
+  line-height: 0.5 !important;
+  padding: 15px 0;
+  margin-bottom: 2.5rem !important;
 }
 #demo32 #contact-bg {
   background-image: url("../images/pages/contact/contact-bg.png");
@@ -11161,8 +11199,12 @@ textarea.form-control-lg {
   padding-top: 10.2rem;
   padding-bottom: 3.9rem;
 }
+#demo32 #contact h5, #demo32 #contact .h5 {
+  font-size: 16px;
+}
 #demo32 #contact p {
-  color: #302f2d;
+  font-size: 17px;
+  color: #7d7b78;
 }
 #demo32 #page-title {
   position: relative;
@@ -11175,12 +11217,13 @@ textarea.form-control-lg {
 #demo32 #page-title .title {
   display: block;
   font-family: "Fredoka One", cursives;
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 1;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
+  color: white;
 }
 #demo32 #page-title p {
-  font-size: 1.25rem;
+  font-size: 19px;
   color: #2f363a;
 }
 #demo32 .team-member {
@@ -11553,6 +11596,9 @@ textarea.form-control-lg {
 #demo32 .contact-form .btn {
   background-color: #f11656;
   padding: 1rem 4rem;
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 @media (max-width: 575.98px) {
   #demo32 .contact-form .btn {
@@ -11580,7 +11626,7 @@ textarea.form-control-lg {
   cursor: pointer;
   font-size: 1rem;
   line-height: 1;
-  padding: 1rem 3.125rem 1rem 1.5rem;
+  padding: 0.8rem 3.125rem 0.8rem 1.5rem;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -11634,6 +11680,10 @@ textarea.form-control-lg {
 #demo32 .form-check-input:checked[type=radio],
 #demo32 .form-check-input[type=checkbox] {
   background-image: none;
+}
+#demo32 .form-label {
+  font-size: 13px;
+  color: #7d7b78;
 }
 #demo32 .quantity {
   width: 11.875rem;
