@@ -56,7 +56,7 @@ $(document).ready(function(){
 
     //Banner slider
     $('.banner').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         speed: 800,
         dots: true,
