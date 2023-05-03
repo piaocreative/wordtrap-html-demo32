@@ -15,16 +15,137 @@
 	Add here styles for banner. Thanks!
 -----------------------------------------------------------------*/
 
-
 #banner {
-    background-image: url(../images/banner/banner_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
+	margin-top: 0;
+	.banner-button {
+		font-weight: 600;
+		background-color: $light-purple;
+		font-size: 8px;
+		padding: 0.2rem 0.4rem;
+		border-radius: 0.2rem;
+		@include media-breakpoint-up(md) {
+			padding: 0.4rem 0.9rem;
+			font-size: 27px;
+			border-radius: 0.5rem;
+		}
+	};
+	.banner-head {
+		font-size: clamp(20px,5vw,5vw);
+		@include media-breakpoint-up (xl) {
+			font-size: 6.3vw;
+			line-height: 1.1;
+			padding: 35px 0;
+		}
+	};
+	.banner1-text {
+		position: absolute;
+		font-size: 8px;
+		left: 17.4vw;
+		top: 12vw;
+		@include media-breakpoint-up (md) {
+			font-size: 20px;
+		}
+	};
+	.banner2-text {
+		.banner-button {
+			top: 20%;
+			@include media-breakpoint-up (md) {
+				top: 24%;
+			}
+		}
+		.banner-head {
+			font-size: clamp(20px,5vw,5vw);
+		}
+	};
+	.banner3-text {
+		position: absolute;
+		left: 54.5vw;
+		top: 8vw;
+		font-size: 8px;
+		@include media-breakpoint-up (md) {
+			font-size: 20px;
+			top: 15vw;
+		}
+		.banner-head {
+			font-size: clamp(15px,4vw,4vw);
+		}
+		.banner-button {
+			font-size: 8px;
+			padding: 0.1rem 0.25rem 0.1rem 0.25rem;
+			@include media-breakpoint-up (md) {
+				font-size: 26px;
+				padding: 0.3rem 0.8rem;
+				margin-bottom: 10px;
+			}
+		}
+	}
 
-    h2 {
-        color: $theme-color;
-        font-style: italic;
-    }
+	#indicator {
+		position: absolute;
+		left: 8vw;
+		bottom: 10vw;
+		li {
+			margin-left: 1vw;
+			margin-right: 1vw;
+		};
+		#slick-slide-control00::before {
+			content: $dot;
+			&:hover {
+				content: $dot_hover;
+			}
+		};
+		#slick-slide-control01::before {
+			content: $dot;
+			&:hover {
+				content: $dot_hover;
+			}
+		};
+		#slick-slide-control02::before {
+			content: $dot;
+			&:hover {
+				content: $dot_hover;
+			}
+		};
+		.slick-dots {
+			display: flex;
+			.slick-active {
+				width: 5vw!important;
+				content: $dot-active;
+				&:hover {
+					content: $dot_hover_active;
+				}
+			}
+		};
+		@include media-breakpoint-up (md) {
+			bottom: 7vw;
+		}
+		@include media-breakpoint-up (lg) {
+			left: 3.75vw;
+			bottom: 5vw;
+		}
+	};
+
+	#socialsite {
+		display: flex;
+		position: absolute;
+		right: -50px;
+		bottom: 20vw;
+		@include rotate(-90deg);
+		a {
+			color: white;
+			padding-right: 7.5vw;
+			font-weight: 200;
+			font-size: 0.5rem;
+			&:hover {
+				color: $light-blue;
+			}
+			@include media-breakpoint-up (lg) {
+				font-size: 1rem;
+				padding-right: 3vw;
+			}
+		};
+		@include media-breakpoint-up (lg) {
+			bottom: 12vw;
+		}
+	}
 }

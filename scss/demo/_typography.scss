@@ -15,19 +15,7 @@ dl, dt, dd, ol, ul, li {
 }
 
 ::selection {
-	background: $theme-color;
-	color: $white;
-	text-shadow: none;
-}
-
-::-moz-selection {
-	background: $theme-color; /* Firefox */
-	color: $white;
-	text-shadow: none;
-}
-
-::-webkit-selection {
-	background: $theme-color; /* Safari */
+	background-color: $theme-color;
 	color: $white;
 	text-shadow: none;
 }
@@ -57,14 +45,14 @@ html {
     @media only screen and (max-width: 991) {
         font-size: 85%;
     }
-  
+
     /*--------------------------------------------------------------
     ## Mobile
     --------------------------------------------------------------*/
     @media only screen and (max-width: 767px) {
         font-size: 80%;
     }
-    
+
     /*--------------------------------------------------------------
     ## Mini
     --------------------------------------------------------------*/
@@ -95,8 +83,7 @@ h5,
 h6 {
 	color: $theme-color;
 	line-height: 1.25;
-	margin: 0 0 1.875rem 0;
-	font-family: $heading-font;
+	font-family: $headings-font-family;
 	font-weight: 400;
 }
 
@@ -105,8 +92,6 @@ h1 {
 	line-height: $line-height-base;
 }
 
-// h5,
-// h6 { margin-bottom: 1.25rem; }
 
 p,
 pre,
@@ -116,7 +101,7 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 1.875rem; }
+form { margin-bottom: 1.5625vw; }
 
 p,
 small { font-family: $body-font; }
@@ -124,7 +109,7 @@ small { font-family: $body-font; }
 ul { margin: 0; }
 ul li { list-style: none; }
 
-i { 
+i {
 	display: inline-block;
 	line-height: inherit;
 }

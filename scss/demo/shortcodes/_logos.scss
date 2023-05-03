@@ -8,27 +8,24 @@
 /* ----------------------------------------------------------------
 	Partners logo Styles
 -----------------------------------------------------------------*/
-
-
+#logos-partners {
+	margin-top: -45px;
+}
 .logos {
-	margin-top: -5rem;
-	margin-bottom: -1.77rem;
-	display: flex;
-	justify-content: space-between;
-	
 	.logo-item {
 		border: 1px solid #eaeaea;
 		border-radius: .3125rem;
-		max-width: 10.625rem;
+		max-width: 10rem;
 		height: 6.25rem;
-		width: 100%;
-		display: flex !important;
-		align-items: center;
+		display: flex!important;
 		justify-content: center;
-
-		img {
-			width: auto;
-			height: auto;
+		align-items: center;
+	};
+	@include media-breakpoint-up (xxl) {
+		.slick-slide.slick-active {
+			width: 219px!important;
 		}
 	}
-} 
+};
+
+

@@ -11,17 +11,20 @@
 
 .post {
 	position: relative;
-	margin-bottom: 1.875rem;
+	margin-bottom: $spacer * 4.5;
 }
 
 .post-thumbnail {
+	display: block;
 	position: relative;
+	width: 100%;
+	height: auto;
 
 	.line {
 		position: absolute;
 		left: 1.4rem;
 		bottom: -2px;
-		background-color: $third-color;
+		background-color: $light-purple;
 		width: 2.7rem;
 		height: 5px;
 		z-index: 100;
@@ -41,71 +44,178 @@
 }
 
 .post-content {
-	padding-left: 1.4rem;
-	padding-bottom: 1.78rem;
+	position: relative;
+	padding: $spacer * 2.1875 0 0;
+	margin-bottom: $spacer * 1.875;
+}
+
+#blog-news {
+	.post-content {
+		padding-left: 1.4rem;
+		padding-bottom: 1.78rem;
+	}
 }
 
 .entry-title {
-	p {
-		color: $text-color;
-		font-size: 1.125rem;
-		line-height: 1;
+	h4 {
+		font-family: $body-font;
+		font-weight: 300;
+		line-height: $line-height-sm;
+		margin-bottom: $spacer * 0.625;
+
+		a {
+			color: $headings-color;
+
+			&:hover { color: $theme-color; }
+		}
 	}
 }
-	
+
 .entry-meta {
-	a {
-		p{
-			color: #cacaca;
-			line-height: 1;
+	list-style: none;
+	margin-bottom: 0;
+
+	li {
+		font-size: $h6-font-size;
+		font-weight: 400;
+		line-height: 1;
+
+		a {
+			color: $body-color;
+
+			&:hover { color: $theme-color; }
 		}
-	}	
+	}
 }
 
-.entry-content { 
-	position: relative; 
-	margin-bottom: 3.125rem;
+
+/* ----------------------------------------------------------------
+	Single Post
+-----------------------------------------------------------------*/
+
+#single-post {
+	.post {
+		margin-bottom: $spacer;
+
+		.post-content {
+			padding: 2.5rem 0;
+			display: block;
+
+			.entry-title {
+				h1 {
+					font-family: $body-font;
+					font-size: 1.75rem;
+					line-height: 2.5rem;
+				}
+			}
+
+			.entry-meta {
+				width: 100%;
+				margin: 0 0 1.25rem 0;
+				padding: 0;
+
+				span {
+					margin-right: 0.9375rem;
+				}
+			}
+
+			.entry-categories {
+				span {
+					display: inline-block;
+					padding: 0.375rem 0.625rem;
+					vertical-align: middle;
+					margin-bottom: 0.5rem;
+				}
+			}
+
+			.entry-content {
+				.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+					line-height: 1.4;
+				}
+			}
+		}
+
+		.post-thumbnail {
+			@include border-radius(0.5rem);
+		}
+	}
 }
 
-.entry-link {
-	padding-top: 1.4rem;
+
+/* ----------------------------------------------------------------
+	Post Comments
+-----------------------------------------------------------------*/
+
+.comments {
+	margin-top: 1.875rem;
+	padding: 2.5rem 0;
+
+	@include border-radius(0.5rem);
+
+	.comments-title {
+		font-family: $body-font;
+		font-size: 1.125rem;
+
+		span {
+			color: $body-color;
+			font-size: 0.875rem;
+			margin-left: 0.625rem;
+		}
+	}
+
+	.comments-list {
+		.comment {
+			.comment-body {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1.25rem;
+			}
+
+			.comment-author-avatar {
+				margin-right: 0.9375rem;
+				width: 4rem;
+				height: 4rem;
+
+				@include border-radius(100%);
+			}
+
+			.comment-author-name {
+				color: $headings-color;
+				margin-right: 0.9375rem;
+			}
+
+			.comment-metadata {
+				margin-right: 0.9375rem;
+			}
+
+			.comment-reply {
+				.comment-reply-link {
+					color: $theme-color;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+			}
+
+			.comment-content {
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.children {
+				margin-left: 4.9375rem;
+			}
+		}
+	}
+
+	.comment-respond {
+		padding: 2.5rem 0;
+
+		@include border-radius(0.5rem);
+
+		.comment-reply-title {
+			font-family: $body-font;
+			font-size: 1.125rem;
+		}
+	}
 }
-
-// .news {
-// 	.news-product {
-// 		position: relative;
-// 	}
-
-// 	.line {
-// 		position: absolute;
-// 		left: 1.4rem;
-// 		bottom: -2px;
-// 		background-color: $third-color;
-// 		width: 2.7rem;
-// 		height: 5px;
-// 		z-index: 100;
-// 		border-radius: 24px;
-// 	}
-
-// 	.news-detail {
-// 		padding-left: 1.4rem;
-// 		padding-bottom: 1.78rem;
-		
-// 		h5 {
-// 			padding-top: 1.4rem;
-// 		}
-		
-// 		p {
-// 			color: $text-color;
-// 			font-size: 1.125rem;
-// 		}
-
-// 		.choose {
-// 			a {
-// 				p {
-// 					color: #cacaca;
-// 				}
-// 			}
-// 		}
-// 	}
-// }

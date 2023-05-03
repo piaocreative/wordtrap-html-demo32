@@ -7,8 +7,7 @@
 
 // Font Family
 .body-font { font-family: $body-font !important; }
-.heading-font { font-family: $heading-font !important; }
-.third-font { font-family: $third-font !important; }
+.heading-font { font-family: $headings-font-family !important; }
 
 // Font Weight
 .fw-semi-bold { font-weight: 700 !important; }
@@ -17,11 +16,9 @@
 // Text Color
 .theme-color { color: $theme-color; }
 .light-blue { color: $light-blue; }
-.third-color { color: $third-color; }
+.third-color { color: $light-purple; }
 .heading-color { color: $heading-color; }
 
-//line height
-// .lh-semi { line-height: 1.18; }
 //-------------------- Image --------------------//
 
 img {
@@ -41,27 +38,93 @@ img {
 	}
 }
 
+/* ----------------------------------------------------------------
+	Tabs
+-----------------------------------------------------------------*/
+
+.nav-tabs,
+.nav-pills {
+	border-bottom: 0;
+	margin-bottom: 1rem;
+
+	.nav-link {
+		font-size: 1.125rem;
+		font-weight: 700;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+}
+
 
 //-------------------- Section ------------------//
-
-.section {
-	position: relative;
-	padding-top: $section-spacer;
-	padding-bottom: $section-spacer;
+section {
+	margin: 5vw 0;
 }
 
-.section-padding-top {
-	padding-top: $section-spacer;
+/* ----------------------------------------------------------------
+	Accordion
+-----------------------------------------------------------------*/
+
+.accordion-header {
+	margin-bottom: 0;
 }
 
-.section-padding-bottom {
-	padding-bottom: $section-spacer;
+.accordion-button {
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 600;
 }
 
-.section-margin-top {
-	margin-top: $section-spacer;
+.accordion-body {
+	padding-top: 0;
 }
 
-.section-margin-bottom {
-	margin-bottom: $section-spacer;
+.accordion-item {
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------------
+	Pagination
+-----------------------------------------------------------------*/
+
+.pagination {
+	.page-item {
+		margin-left: 0.5rem;
+
+		&.prev {
+			.page-link {
+				&::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-right: 0.625rem;
+				}
+
+				&:hover::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+
+		&.next {
+			.page-link {
+				&::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-left: 0.625rem;
+				}
+
+				&:hover::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+
+		.page-link {
+			line-height: 1;
+			position: relative;
+
+			@include border-radius($pagination-border-radius);
+		}
+	}
 }
